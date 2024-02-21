@@ -1,15 +1,25 @@
 <template>
-  <div>
-    <RouterView />
-    <ModalContainer />
+  <div class="body">
+    <FourthButton/>
+    <FourthButton class="red">
+      HALLO
+    </FourthButton>
+    <FourthButton class="blue">
+      MARHABAN
+    </FourthButton>
+    <FourthButton class="purple">
+      NI HAO
+    </FourthButton>
   </div>
 </template>
 
 <script>
 import ModalContainer from "@/components/parts/ModalContainer";
+import FourthButton from "@/components/FourthButton.vue";
 
 export default {
   components: {
+    FourthButton,
     ModalContainer
   }
 }
