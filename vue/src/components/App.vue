@@ -109,34 +109,4 @@ h2 {
   }
 }
 
-.blue-red{
-  box-shadow: 0 2px 15px purple;
-  background: linear-gradient(to right, blue, red);
-}
-
-.yellow-orange{
-  box-shadow: 0 2px 15px orange;
-  background: linear-gradient(to right, khaki, darkorange);
-}
-
-.orange-pink{
-  box-shadow: 0 2px 15px hotpink;
-  background: linear-gradient(to right, orange, deeppink);
-}
-
-.pink-red{
-  box-shadow: 0 2px 15px mediumvioletred;
-  background: linear-gradient(to right, deeppink, red);
-}
-
-.pink-purple{
-  box-shadow: 0 2px 15px purple;
-  background: linear-gradient(to right, deeppink, mediumpurple);
-}
-
-.mediumpurple-purple{
-  box-shadow: 0 2px 15px purple;
-  background: linear-gradient(to right, mediumpurple, rebeccapurple);
-}
-
 </style>
