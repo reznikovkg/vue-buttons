@@ -1,14 +1,25 @@
 <template>
   <div class="body">
-    <FourthButton/>
-    <FourthButton class="red">
-      HALLO
+    <FourthButton class="yellow-orange">
+      Subscribe
     </FourthButton>
-    <FourthButton class="blue">
-      MARHABAN
+    <FourthButton class="orange-pink">
+      Click here
     </FourthButton>
-    <FourthButton class="purple">
-      NI HAO
+    <FourthButton class="pink-red">
+      Download
+    </FourthButton>
+
+    <br>
+
+    <FourthButton class="blue-red">
+      Play now
+    </FourthButton>
+    <FourthButton class="pink-purple">
+      Explore
+    </FourthButton>
+    <FourthButton class="mediumpurple-purple">
+      Read more
     </FourthButton>
   </div>
 </template>
@@ -26,7 +37,6 @@ export default {
 </script>
 
 <style lang="less">
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
 
 body {
   margin: 0;
@@ -98,4 +108,35 @@ h2 {
     }
   }
 }
+
+.blue-red{
+  box-shadow: 0 2px 15px purple;
+  background: linear-gradient(to right, blue, red);
+}
+
+.yellow-orange{
+  box-shadow: 0 2px 15px orange;
+  background: linear-gradient(to right, khaki, darkorange);
+}
+
+.orange-pink{
+  box-shadow: 0 2px 15px hotpink;
+  background: linear-gradient(to right, orange, deeppink);
+}
+
+.pink-red{
+  box-shadow: 0 2px 15px mediumvioletred;
+  background: linear-gradient(to right, deeppink, red);
+}
+
+.pink-purple{
+  box-shadow: 0 2px 15px purple;
+  background: linear-gradient(to right, deeppink, mediumpurple);
+}
+
+.mediumpurple-purple{
+  box-shadow: 0 2px 15px purple;
+  background: linear-gradient(to right, mediumpurple, rebeccapurple);
+}
+
 </style>
