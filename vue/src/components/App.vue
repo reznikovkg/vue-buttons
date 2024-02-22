@@ -10,8 +10,6 @@
       Download
     </FourthButton>
 
-    <br>
-
     <FourthButton class="blue-red">
       Play now
     </FourthButton>
@@ -21,17 +19,17 @@
     <FourthButton class="mediumpurple-purple">
       Read more
     </FourthButton>
+
   </div>
+
 </template>
 
 <script>
-import ModalContainer from "@/components/parts/ModalContainer";
 import FourthButton from "@/components/FourthButton.vue";
 
 export default {
   components: {
-    FourthButton,
-    ModalContainer
+    FourthButton
   }
 }
 </script>
