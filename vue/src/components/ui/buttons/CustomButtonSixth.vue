@@ -23,7 +23,9 @@ export default {
   border: 0;
   outline: #000 solid 2px;
   position: relative;
+
   z-index: 0;
+
 }
 
 .button::after {
@@ -33,15 +35,13 @@ export default {
   position: absolute;
   background-color: #ecc956;
   z-index: -1;
-  transition: all 0.45s ease 0.05s;
+  transition: transform 0.45s ease 0.05s;
   left: -7px;
   bottom: -7px;
 }
 
 .button:hover::after {
-  transition: all 0.45s ease 0.05s;
-  left: 7px;
-  bottom: 7px;
+  transform: translate(14px, -14px);
 }
 
 
