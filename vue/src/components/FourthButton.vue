@@ -1,19 +1,41 @@
 <template>
-  <button class="button">
+  <button class="button" :style="buttonStyles">
     <slot>
-      BUTTON
+      Button
     </slot>
   </button>
 </template>
 
 <script>
 export default {
-  name: 'FourthButton'
+  name: 'FourthButton',
+  props: {
+    bgStart: {
+      type: String,
+      default: 'blue'
+    },
+    bgEnd: {
+      type: String,
+      default: 'red'
+    },
+    boxShadowColor: {
+      type: String,
+      default: 'purple'
+    }
+  },
+  computed: {
+    buttonStyles() {
+      return {
+        '--bg-start': this.bgStart,
+        '--bg-end': this.bgEnd,
+        '--box-shadow-color': this.boxShadowColor
+      };
+    }
+  }
 }
 </script>
 
-<style>
-
+<style scoped lang="less">
 .button {
   display: inline-block;
   position: relative;
@@ -22,8 +44,8 @@ export default {
 
   border-radius: 27px;
 
-  box-shadow: 0 2px 15px purple;
-  background: linear-gradient(to right, blue, red);
+  box-shadow:  0  2px  15px var(--box-shadow-color);
+  background: linear-gradient(to right, var(--bg-start), var(--bg-end));
 
   color: #fff;
   font: 700 14px/60px "Droid Sans", sans-serif;
@@ -33,71 +55,38 @@ export default {
   text-transform: uppercase;
   border: 0;
   outline: none;
-}
 
-.button::before {
-  content: '›';
-  position: absolute;
-  right: 16px;
-  font-size: 50px;
-  margin-top: -4px;
-  width: 24px;
-  height: 24px;
-  border-left-color: transparent;
-  border-right-color: transparent;
-}
+  &::before {
+    content: '›';
+    position: absolute;
+    right: 16px;
+    font-size: 50px;
+    margin-top: -4px;
+    width: 24px;
+    height: 24px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+  &::after {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    box-shadow: 0px 0px 1px 1px white;
+    border: 2px solid white;
+    border-radius: 27px;
+    width: 230px;
+    height: 50px;
+    top: 3px;
+    left: 3px;
+    right: 2px;
+    bottom: 2px;
+  }
+  &:active {
+    box-shadow: none;
+  }
+  &:hover {
+    transform: scale(0.95);
+  }
 
-.button::after {
-  position: absolute;
-  z-index: 1;
-  content: '';
-  box-shadow: 0px 0px 1px 1px white;
-  border: 2px solid white;
-  border-radius: 27px;
-  width: 230px;
-  height: 50px;
-  top: 3px;
-  left: 3px;
-  right: 2px;
-  bottom: 2px;
 }
-
-.button:active {
-  box-shadow: none;
-}
-
-.button:hover {
-  transform: scale(0.95);
-}
-
-.blue-red{
-  box-shadow: 0 2px 15px purple;
-  background: linear-gradient(to right, blue, red);
-}
-
-.yellow-orange{
-  box-shadow: 0 2px 15px orange;
-  background: linear-gradient(to right, khaki, darkorange);
-}
-
-.orange-pink{
-  box-shadow: 0 2px 15px hotpink;
-  background: linear-gradient(to right, orange, deeppink);
-}
-
-.pink-red{
-  box-shadow: 0 2px 15px mediumvioletred;
-  background: linear-gradient(to right, deeppink, red);
-}
-
-.pink-purple{
-  box-shadow: 0 2px 15px purple;
-  background: linear-gradient(to right, deeppink, mediumpurple);
-}
-
-.mediumpurple-purple{
-  box-shadow: 0 2px 15px purple;
-  background: linear-gradient(to right, mediumpurple, rebeccapurple);
-}
-
 </style>
