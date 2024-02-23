@@ -1,24 +1,34 @@
 <template>
   <div class="body">
-    <FourthButton class="yellow-orange">
+    <FourthButton bg-start="khaki" bg-end="darkorange" box-shadow-color="orange">
       Subscribe
     </FourthButton>
-    <FourthButton class="orange-pink">
+
+    <FourthButton bg-start="orange" bg-end="deeppink" box-shadow-color="hotpink">
       Click here
     </FourthButton>
-    <FourthButton class="pink-red">
+
+    <FourthButton bg-start="deeppink" bg-end="red" box-shadow-color="mediumvioletred">
       Download
     </FourthButton>
 
-    <FourthButton class="blue-red">
+    <br>
+
+    <!--default-->
+    <FourthButton>
       Play now
     </FourthButton>
-    <FourthButton class="pink-purple">
+
+    <FourthButton bg-start="deeppink" bg-end="mediumpurple" box-shadow-color="purple" >
       Explore
     </FourthButton>
-    <FourthButton class="mediumpurple-purple">
+
+    <FourthButton bg-start="mediumpurple" bg-end="rebeccapurple" box-shadow-color="purple">
       Read more
     </FourthButton>
+
+    <RouterView />
+    <ModalContainer />
 
   </div>
 
@@ -26,10 +36,12 @@
 
 <script>
 import FourthButton from "@/components/FourthButton.vue";
+import ModalContainer from "@/components/parts/ModalContainer";
 
 export default {
   components: {
-    FourthButton
+    FourthButton,
+    ModalContainer
   }
 }
 </script>
