@@ -31,6 +31,7 @@ export default {
         '--box-shadow-color': this.boxShadowColor
       };
     }
+
   }
 }
 </script>
