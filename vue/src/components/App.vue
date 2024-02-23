@@ -19,7 +19,7 @@
       Play now
     </FourthButton>
 
-    <FourthButton bg-start="deeppink" bg-end="mediumpurple" box-shadow-color="purple" >
+    <FourthButton bg-start="deeppink" bg-end="mediumpurple" box-shadow-color="purple">
       Explore
     </FourthButton>
 
@@ -27,8 +27,8 @@
       Read more
     </FourthButton>
 
-    <RouterView />
-    <ModalContainer />
+    <RouterView/>
+    <ModalContainer/>
 
   </div>
 
@@ -47,7 +47,7 @@ export default {
 </script>
 
 <style lang="less">
-
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
 body {
   margin: 0;
   padding: 0;
@@ -118,5 +118,4 @@ h2 {
     }
   }
 }
-
 </style>

@@ -24,7 +24,7 @@ export default {
     }
   },
   computed: {
-    buttonStyles() {
+    buttonStyles () {
       return {
         '--bg-start': this.bgStart,
         '--bg-end': this.bgEnd,
@@ -41,14 +41,14 @@ export default {
   position: relative;
   width: 240px;
   height: 60px;
-
   border-radius: 27px;
-
-  box-shadow:  0  2px  15px var(--box-shadow-color);
+  box-shadow: 0 2px 15px var(--box-shadow-color);
   background: linear-gradient(to right, var(--bg-start), var(--bg-end));
-
   color: #fff;
-  font: 700 14px/60px "Droid Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 60px;
+  font-family: "Droid Sans", sans-serif;
   letter-spacing: 0.15em;
   text-align: center;
   text-decoration: none;
@@ -67,11 +67,12 @@ export default {
     border-left-color: transparent;
     border-right-color: transparent;
   }
+
   &::after {
     position: absolute;
     z-index: 1;
     content: '';
-    box-shadow: 0px 0px 1px 1px white;
+    box-shadow: 0 0 1px 1px white;
     border: 2px solid white;
     border-radius: 27px;
     width: 230px;
@@ -81,12 +82,13 @@ export default {
     right: 2px;
     bottom: 2px;
   }
+
   &:active {
     box-shadow: none;
   }
+
   &:hover {
     transform: scale(0.95);
   }
-
 }
 </style>
