@@ -1,10 +1,10 @@
 <template>
   <div>
-    <FifthButton />
-    <FifthButton class="green"/>
-    <FifthButton class="red"/>
-    <FifthButton class="orange"/>
-    <FifthButton class="black"/>
+    <FifthButton type="Blue"/>
+    <FifthButton type="Green"/>
+    <FifthButton type="Red"/>
+    <FifthButton type="Orange"/>
+    <FifthButton type="Black"/>
   </div>
 </template>
 
@@ -90,17 +90,5 @@ h2 {
       cursor: wait;
     }
   }
-}
-.green .btn5 {
-  background: #7fb534;
-}
-.red .btn5 {
-  background: #cd2f31;
-}
-.orange .btn5 {
-  background: #ea452c;
-}
-.black .btn5 {
-  background: #28304b;
 }
 </style>

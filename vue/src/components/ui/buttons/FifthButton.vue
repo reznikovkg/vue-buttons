@@ -1,23 +1,29 @@
 <template>
   <div>
-    <button class="btn5" @mouseover="hovering = true" @mouseleave="hovering = false" :class="{'btn5-hovered': hovering}">
+    <button class="btn5" :class="customStyle">
       LINK TO ACTION
     </button>
   </div>
 </template>
 
-<script >
-  export default {
-    name: 'FifthButton',
-    data () {
-      return {
-        hovering: false
-      }
+<script>
+export default {
+  name: 'FifthButton',
+  props: {
+    type: {
+      type: String,
+      required: true
+    }
+  },
+  computed: {
+    customStyle() {
+      return "btn" + this.type;
     }
   }
+}
 </script>
 
-<style>
+<style lang="less">
 
 .btn5 {
   color: white;
@@ -26,22 +32,47 @@
   padding: 35px 80px;
   border: none;
   border-radius: 5px;
-  background: #19a6cb;
   position: relative;
 }
-.btn5-hovered {
+
+.btn5:hover {
   padding-top: 25px;
   padding-bottom: 45px;
 }
-.btn5-hovered::before {
+
+.btn5:hover::before {
   content: '';
   height: 15px;
   width: 100%;
   position: absolute;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.btnDefault {
+  background: #FFF;
+}
+
+.btnBlue {
+  background: #19a6cb;
+}
+
+.btnGreen {
+  background: #7fb534;
+}
+
+.btnRed {
+  background: #cd2f31;
+}
+
+.btnOrange {
+  background: #ea452c;
+}
+
+.btnBlack {
+  background: #28304b;
 }
 </style>
