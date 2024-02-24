@@ -1,49 +1,26 @@
 <template>
   <div>
-    <FourthButton bg-start="khaki" bg-end="darkorange" box-shadow-color="orange">
-      Subscribe
-    </FourthButton>
-
-    <FourthButton bg-start="orange" bg-end="deeppink" box-shadow-color="hotpink">
-      Click here
-    </FourthButton>
-
-    <FourthButton bg-start="deeppink" bg-end="red" box-shadow-color="mediumvioletred">
-      Download
-    </FourthButton>
-
-    <!--default-->
-    <FourthButton>
-      Play now
-    </FourthButton>
-
-    <FourthButton bg-start="deeppink" bg-end="mediumpurple" box-shadow-color="purple">
-      Explore
-    </FourthButton>
-
-    <FourthButton bg-start="mediumpurple" bg-end="rebeccapurple" box-shadow-color="purple">
-      Read more
-    </FourthButton>
-
-    <RouterView/>
-    <ModalContainer/>
+    <FourthButtonPage />
+    <RouterView />
+    <ModalContainer />
   </div>
 </template>
 
 <script>
-import FourthButton from "@/components/FourthButton.vue";
 import ModalContainer from "@/components/parts/ModalContainer";
+import FourthButtonPage from "@/components/pages/FourthButtonPage.vue";
 
 export default {
   components: {
-    FourthButton,
-    ModalContainer
+    ModalContainer,
+    FourthButtonPage
   }
 }
 </script>
 
 <style lang="less">
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+
 body {
   margin: 0;
   padding: 0;
