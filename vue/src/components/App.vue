@@ -1,13 +1,13 @@
 <template>
   <div class="body">
     <CustomButton/>
-    <CustomButton type="Red">
+    <CustomButton type="red">
       HALLO
     </CustomButton>
-    <CustomButton type="Blue">
+    <CustomButton type="blue">
       MARHABAN
     </CustomButton>
-    <CustomButton type="Purple">
+    <CustomButton type="purple">
       NI HAO
     </CustomButton>
   </div>

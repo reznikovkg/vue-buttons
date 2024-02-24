@@ -17,7 +17,7 @@ export default {
   },
   computed: {
     colorChanger() {
-      return 'buttonColor' + this.type;
+      return 'button-color-' + this.type;
     }
   }
 }
@@ -54,19 +54,19 @@ export default {
   transform: translate(14px, -14px);
 }
 
-.buttonColorYellow::after {
+.button-color-yellow::after {
   background: #ecc956
 }
 
-.buttonColorRed::after {
+.button-color-red::after {
   background: #dc4d4e;
 }
 
-.buttonColorBlue::after {
+.button-color-blue::after {
   background: #539fe0;
 }
 
-.buttonColorPurple::after {
+.button-color-purple::after {
   background: #b96ee7
 }
 </style>
