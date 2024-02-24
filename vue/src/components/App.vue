@@ -1,15 +1,15 @@
 <template>
   <div class="body">
     <CustomButton/>
-    <CustomButton class="red">
+    <CustomButton type="Red">
       HALLO
     </CustomButton>
-    <custom-button class="blue">
+    <CustomButton type="Blue">
       MARHABAN
-    </custom-button>
-    <custom-button class="purple">
+    </CustomButton>
+    <CustomButton type="Purple">
       NI HAO
-    </custom-button>
+    </CustomButton>
   </div>
 </template>
 
@@ -95,21 +95,5 @@ h2 {
       cursor: wait;
     }
   }
-}
-
-.body{
-  margin-top: 50px;
-}
-
-.red::after{
-  background: #dc4d4e;
-}
-
-.blue::after{
-  background: #539fe0;
-}
-
-.purple::after{
-  background: #b96ee7;
 }
 </style>

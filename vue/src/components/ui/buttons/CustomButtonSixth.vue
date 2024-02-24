@@ -1,5 +1,5 @@
 <template>
-  <button class="button">
+  <button class="button" :class="colorChanger">
     <slot>
       HELLO
     </slot>
@@ -8,12 +8,24 @@
 
 <script>
 export default {
-  name: 'CustomButton'
+  name: 'CustomButtonSixth',
+  props: {
+    type: {
+      type: String,
+      default: 'Yellow'
+    }
+  },
+  computed: {
+    colorChanger() {
+      return 'buttonColor' + this.type;
+    }
+  }
 }
 </script>
 
-<style>
+<style scoped lang="less">
 .button {
+  margin-top: 50px;
   margin-left: 20px;
   height: 35px;
   padding-left: 10px;
@@ -23,9 +35,7 @@ export default {
   border: 0;
   outline: #000 solid 2px;
   position: relative;
-
-  z-index: 0;
-
+  background: none;
 }
 
 .button::after {
@@ -44,5 +54,19 @@ export default {
   transform: translate(14px, -14px);
 }
 
+.buttonColorYellow::after {
+  background: #ecc956
+}
 
+.buttonColorRed::after {
+  background: #dc4d4e;
+}
+
+.buttonColorBlue::after {
+  background: #539fe0;
+}
+
+.buttonColorPurple::after {
+  background: #b96ee7
+}
 </style>
