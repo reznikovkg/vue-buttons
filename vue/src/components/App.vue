@@ -1,5 +1,5 @@
 <template>
-  <div class="body">
+  <div>
     <FourthButton bg-start="khaki" bg-end="darkorange" box-shadow-color="orange">
       Subscribe
     </FourthButton>
@@ -11,8 +11,6 @@
     <FourthButton bg-start="deeppink" bg-end="red" box-shadow-color="mediumvioletred">
       Download
     </FourthButton>
-
-    <br>
 
     <!--default-->
     <FourthButton>
@@ -29,9 +27,7 @@
 
     <RouterView/>
     <ModalContainer/>
-
   </div>
-
 </template>
 
 <script>
