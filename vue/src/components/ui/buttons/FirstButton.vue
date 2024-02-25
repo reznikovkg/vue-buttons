@@ -20,7 +20,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
   .first-button {
     border: none;
     color: white;

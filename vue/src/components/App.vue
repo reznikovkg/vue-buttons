@@ -2,28 +2,17 @@
   <div>
     <RouterView />
     <ModalContainer />
-  <div class="main-container">
-    <div class="buttons-container">
-      <FirstButton color="green">Button</FirstButton>
-      <FirstButton color="white">Button</FirstButton>
-      <FirstButton color="red">Button</FirstButton>
-    </div>
-    <div class="buttons-container">
-      <FirstButton disabled color="green">Disabled</FirstButton>
-      <FirstButton disabled color="white">Disabled</FirstButton>
-      <FirstButton disabled color="red">Disabled</FirstButton>
-    </div>
-  </div>
+    <FirstButtonPage />
   </div>
 </template>
 
 <script>
 import ModalContainer from "@/components/parts/ModalContainer";
-import FirstButton from "@/components/ui/buttons/FirstButton.vue";
+import FirstButtonPage from "@/components/pages/FirstButtonPage.vue";
 
 export default {
   components: {
-    FirstButton,
+    FirstButtonPage,
     ModalContainer
   }
 }
@@ -36,21 +25,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: @cBaseTwo;
-}
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  zoom: 200%;
-  gap: 20px;
-  position: relative;
-  bottom: 200px;
-}
-.buttons-container {
-  display: flex;
-  gap: 10px;
 }
 
 a {
