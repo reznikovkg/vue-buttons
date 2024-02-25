@@ -1,7 +1,8 @@
 <template>
   <div>
-    <TwelveBtnPage />
-    <RouterView />
+    <component :is="page">
+      <RouterView />
+    </component>
     <ModalContainer />
   </div>
 </template>
@@ -14,6 +15,11 @@ export default {
   components: {
     ModalContainer,
     TwelveBtnPage
+  },
+  computed: {
+    page () {
+      return this.$route.meta.page + 'page'
+    }
   }
 }
 </script>
