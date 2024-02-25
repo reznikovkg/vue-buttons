@@ -1,20 +1,19 @@
 <template>
   <div>
-    <TwelveBtn :purple ="true" title="button"/>
-    <TwelveBtn :green="true" title="button"/>
-    <TwelveBtn :orange="true" title="button"/>
-    <TwelveBtn :blue="true" title="button"/>
-    <TwelveBtn :brown="true" title="button"/>
-    <TwelveBtn :lime="true" title="button"/>
+    <TwelveBtnPage />
+    <RouterView />
+    <ModalContainer />
   </div>
 </template>
 
 <script>
-import TwelveBtn from "@/components/ui/buttons/TwelveBtn";
+import ModalContainer from "@/components/parts/ModalContainer";
+import TwelveBtnPage from "@/components/pages/TwelveBtnPage.vue";
 
 export default {
   components: {
-    TwelveBtn
+    ModalContainer,
+    TwelveBtnPage
   }
 }
 </script>
@@ -91,14 +90,5 @@ h2 {
       cursor: wait;
     }
   }
-}
-
-div{
-  width: 40%;
-  padding-top: 30px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  grid-gap: 20px;
 }
 </style>
