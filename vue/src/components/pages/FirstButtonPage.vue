@@ -1,20 +1,30 @@
 <template>
-  <div class="main-container">
-    <div class="buttons-container">
-      <FirstButton color="green">Button</FirstButton>
-      <FirstButton color="white">Button</FirstButton>
-      <FirstButton color="red">Button</FirstButton>
+  <PageLayout>
+    <div class="main-container">
+      <div class="buttons-container">
+        <FirstButton color="green">Button</FirstButton>
+        <FirstButton color="white">Button</FirstButton>
+        <FirstButton color="red">Button</FirstButton>
+      </div>
+      <div class="buttons-container">
+        <FirstButton disabled color="green">Disabled</FirstButton>
+        <FirstButton disabled color="white">Disabled</FirstButton>
+        <FirstButton disabled color="red">Disabled</FirstButton>
+      </div>
     </div>
-    <div class="buttons-container">
-      <FirstButton disabled color="green">Disabled</FirstButton>
-      <FirstButton disabled color="white">Disabled</FirstButton>
-      <FirstButton disabled color="red">Disabled</FirstButton>
-    </div>
-  </div>
+  </PageLayout>
 </template>
 
-<script setup>
+<script>
+import PageLayout from '../parts/PageLayout'
 import FirstButton from "@/components/ui/buttons/FirstButton.vue";
+
+export default {
+  components: {
+    FirstButton,
+    PageLayout
+  }
+}
 </script>
 
 <style lang="less">
@@ -23,13 +33,9 @@ import FirstButton from "@/components/ui/buttons/FirstButton.vue";
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
   zoom: 200%;
   background: #EEEEEE;
   gap: 20px;
-  position: relative;
-  bottom: 200px;
 }
 
 .buttons-container {
