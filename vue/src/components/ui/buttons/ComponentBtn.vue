@@ -37,7 +37,7 @@
   }
 </script>
 
-<style scoped>
+<style lang="less">
   .main-block__element {
     width: 110px;
     height: 35px;
@@ -51,4 +51,5 @@
     cursor: pointer;
     display: block;
   }
+
 </style>

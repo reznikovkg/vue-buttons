@@ -2,11 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\vue",
-    "\\vue\\src",
-    "\\vue\\src\\components",
-    "\\vue\\src\\components\\pages",
-    "\\vue\\src\\router"
+    "\\vue\\src"
   ],
-  "SelectedNode": "\\vue\\src\\router\\index.ts",
   "PreviewInSolutionExplorer": false
 }

@@ -32,12 +32,10 @@
     margin-bottom: 20px;
     border-radius: 2px;
     box-sizing: border-box;
-    &:last-child
 
-      {
+    &:last-child {
         margin-bottom: 0;
-      }
-
+    }
   }
 
   h1, h2, h3, h4, h5 {
@@ -59,12 +57,10 @@
   }
 
   .rcms {
-    &-divider
 
-    {
-      &-h
+    &-divider {
 
-      {
+      &-h {
         width: 100%;
         height: @sizeBorderDefault;
         background-color: @cBaseTwo;
@@ -72,14 +68,11 @@
 
       &-v {
       }
-
     }
 
     &-loading {
       position: relative;
-      &::after
-
-      {
+      &::after {
         content: '';
         position: absolute;
         left: 0;
@@ -90,7 +83,6 @@
         background: rgba(100, 100, 100, 0.5);
         cursor: wait;
       }
-
     }
   }
 
