@@ -1,25 +1,16 @@
 <template>
   <div>
-    <component :is="page">
-      <RouterView />
-    </component>
+    <RouterView />
     <ModalContainer />
   </div>
 </template>
 
 <script>
 import ModalContainer from "@/components/parts/ModalContainer";
-import TwelveBtnPage from "@/components/pages/TwelveBtnPage.vue";
 
 export default {
   components: {
-    ModalContainer,
-    TwelveBtnPage
-  },
-  computed: {
-    page () {
-      return this.$route.meta.page + 'page'
-    }
+    ModalContainer
   }
 }
 </script>

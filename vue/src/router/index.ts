@@ -15,7 +15,6 @@ const routes = [
   {
     path: '/TwelveBtn',
     name: RouteNames.TwelveBtn,
-    meta: {page: 'TwelveBtn'},
     component: TwelveBtnPage
   }
 ]
