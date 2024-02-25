@@ -1,6 +1,9 @@
 <template>
   <button class="main-block__element"
-          :style="{backgroundColor: backgroundColor, color: textColor, borderWidth: borderWidth, borderStyle: 'solid', borderColor: borderColor,  boxShadow: boxShadow }">
+          :style="{backgroundColor: backgroundColor, color: textColor, 
+                   borderWidth: borderWidth, borderStyle: 'solid', 
+                   borderColor: borderColor,  boxShadow: boxShadow }"
+  >
     <slot>
     </slot>
   </button>
