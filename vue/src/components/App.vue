@@ -1,19 +1,15 @@
 <template>
   <div>
-    <FifthButton type="Blue"/>
-    <FifthButton type="Green"/>
-    <FifthButton type="Red"/>
-    <FifthButton type="Orange"/>
-    <FifthButton type="Black"/>
+    <FifthButtonPage />
   </div>
 </template>
 
 <script>
-import FifthButton from "@/components/ui/buttons/FifthButton.vue";
+import FifthButtonPage from "@/components/pages/FifthButtonPage.vue";
 
 export default {
   components: {
-    FifthButton
+    FifthButtonPage
   }
 }
 </script>
