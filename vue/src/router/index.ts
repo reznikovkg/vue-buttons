@@ -14,8 +14,8 @@ const routes = [
     component: HomePage
   },
   {
-    path:'/fourth_button',
-    name:RouteNames.FOURTH_BUTTON,
+    path: '/fourth_button',
+    name: RouteNames.FOURTH_BUTTON,
     component: FourthButtonPage
   },
   {

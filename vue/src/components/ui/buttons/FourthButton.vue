@@ -29,7 +29,7 @@ export default {
         '--bg-start': this.bgStart,
         '--bg-end': this.bgEnd,
         '--box-shadow-color': this.boxShadowColor
-      };
+      }
     }
   }
 }
@@ -64,8 +64,6 @@ export default {
     margin-top: -4px;
     width: 24px;
     height: 24px;
-    border-left-color: transparent;
-    border-right-color: transparent;
   }
 
   &::after {

@@ -32,7 +32,7 @@ import PageLayout from '../parts/PageLayout';
 import FourthButton from "@/components/ui/buttons/FourthButton.vue";
 
 export default {
-  name:'FourthButtonPage',
+  name: 'FourthButtonPage',
   components: {
     PageLayout,
     FourthButton
