@@ -1,5 +1,5 @@
 <template>
-  <button :class="['first-button', getColor]">
+  <button class="first-button" :class=getColor>
     <slot/>
   </button>
 </template>
@@ -43,37 +43,37 @@ export default {
     &-red {
       background: #e0886a;
     }
-  }
 
-  .first-button:after{
-    content:'';
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    border-radius: 6px;
-  }
+    &:after {
+      content:'';
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      border-radius: 6px;
+    }
 
-  .first-button:hover {
-    box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.2) inset;
-    cursor: pointer;
-  }
+    &:hover {
+      box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.2) inset;
+      cursor: pointer;
+    }
 
-  .first-button:active {
-    box-shadow: none;
-  }
+    &:active {
+      box-shadow: none;
 
-  .first-button:active::after {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
+      &::after {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
 
-  .first-button:disabled {
-    box-shadow: none;
-    cursor: default;
-  }
+    &:disabled {
+      box-shadow: none;
+      cursor: default;
 
-  .first-button:disabled::after {
-    background-color: rgba(255, 255, 255, 0.4);
+      &::after {
+        background-color: rgba(255, 255, 255, 0.4);
+      }
+    }
   }
 </style>
