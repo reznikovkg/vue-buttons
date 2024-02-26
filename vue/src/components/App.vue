@@ -1,7 +1,7 @@
 <template>
   <div>
-    <RouterView/>
-    <ModalContainer/>
+    <RouterView />
+    <ModalContainer />
   </div>
 </template>
 

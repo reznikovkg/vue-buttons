@@ -36,18 +36,18 @@ export default {
   outline: #000 solid 2px;
   position: relative;
   background: none;
-}
 
-.button::after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: #ecc956;
-  z-index: -1;
-  transition: transform 0.45s ease 0.05s;
-  left: -7px;
-  bottom: -7px;
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #ecc956;
+    z-index: -1;
+    transition: transform 0.45s ease 0.05s;
+    left: -7px;
+    bottom: -7px;
+  }
 }
 
 .button:hover::after {
