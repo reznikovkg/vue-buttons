@@ -2,17 +2,14 @@
   <div>
     <RouterView />
     <ModalContainer />
-    <FirstButtonPage />
   </div>
 </template>
 
 <script>
 import ModalContainer from "@/components/parts/ModalContainer";
-import FirstButtonPage from "@/components/pages/FirstButtonPage.vue";
 
 export default {
   components: {
-    FirstButtonPage,
     ModalContainer
   }
 }

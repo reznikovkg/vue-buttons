@@ -28,14 +28,20 @@ export default {
 </script>
 
 <style lang="less">
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #EEEEEE;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   zoom: 200%;
-  background: #EEEEEE;
   gap: 20px;
+  margin-top: 100px;
 }
 
 .buttons-container {
