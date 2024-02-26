@@ -47,7 +47,7 @@
     background: var(--btn-background-color);
     color: var(--btn-text-color);
     border: var(--btn-border);
-    box-shadow: var(--btn-);
+    box-shadow: var(--btn-shadow);
     padding: 0.5% 1%;
     box-sizing: border-box;
     margin: 3% 0.75%;
