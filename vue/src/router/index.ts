@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomePage from '../components/pages/Home.vue'
 import {RouteNames} from './routes'
 import ButtonSixthPage from "@/components/pages/ButtonSixthPage.vue"
+import TwelfthButtonPage from '../components/pages/TwelfthButtonPage.vue'
 
 Vue.use(VueRouter)
 
