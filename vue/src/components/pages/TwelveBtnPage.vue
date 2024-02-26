@@ -1,11 +1,11 @@
 <template>
   <FlexBtn>
-    <TwelveBtn :purple ="true" title="button"/>
-    <TwelveBtn :green="true" title="button"/>
-    <TwelveBtn :orange="true" title="button"/>
-    <TwelveBtn :blue="true" title="button"/>
-    <TwelveBtn :brown="true" title="button"/>
-    <TwelveBtn :lime="true" title="button"/>
+    <TwelveBtn type="purple"/>
+    <TwelveBtn type="green"/>
+    <TwelveBtn type="orange"/>
+    <TwelveBtn type="blue"/>
+    <TwelveBtn type="brown"/>
+    <TwelveBtn type="lime"/>
   </FlexBtn>
 </template>
 
