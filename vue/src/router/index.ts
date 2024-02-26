@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomePage from '../components/pages/Home.vue'
-import TwelveBtnPage from '../components/pages/TwelveBtnPage.vue'
+import TwelfthButtonPage from '../components/pages/TwelfthButtonPage.vue'
 import { RouteNames } from './routes'
 
 Vue.use(VueRouter)
@@ -13,9 +13,9 @@ const routes = [
     component: HomePage
   },
   {
-    path: '/TwelveBtn',
-    name: RouteNames.TwelveBtn,
-    component: TwelveBtnPage
+    path: '/TwelfthButton',
+    name: RouteNames.TwelfthButton,
+    component: TwelfthButtonPage
   }
 ]
 

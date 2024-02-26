@@ -1,5 +1,5 @@
 <template>
-  <button class="twelve-btn" :class = "className">
+  <button class="twelfth-btn" :class = "className">
     <slot>
       button
     </slot>
@@ -8,20 +8,20 @@
 
 <script>
 export default {
-  name: "TwelveBtn",
+  name: "TwelfthButton",
   props: {
     type: String,
   },
   computed: {
     className () {
-      return `twelve-btn__${this.type}`;
+      return `twelfth-btn__${this.type}`;
     }
   }
 }
 </script>
 
 <style lang="less" scoped>
-.twelve-btn {
+.twelfth-btn {
   width: 150px;
   height: 50px;
   color: white;
