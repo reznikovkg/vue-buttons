@@ -1,24 +1,16 @@
 <template>
-  <div class="body">
-    <CustomButton/>
-    <CustomButton type="red">
-      HALLO
-    </CustomButton>
-    <CustomButton type="blue">
-      MARHABAN
-    </CustomButton>
-    <CustomButton type="purple">
-      NI HAO
-    </CustomButton>
+  <div>
+    <RouterView/>
+    <ModalContainer/>
   </div>
 </template>
 
 <script>
-import CustomButton from "@/components/ui/buttons/CustomButtonSixth.vue";
+import ModalContainer from "@/components/parts/ModalContainer.vue";
 
 export default {
   components: {
-    CustomButton
+    ModalContainer,
   }
 }
 </script>
