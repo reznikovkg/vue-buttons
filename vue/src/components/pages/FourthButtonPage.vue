@@ -29,9 +29,10 @@
 
 <script>
 import PageLayout from '../parts/PageLayout';
-import FourthButton from "@/components/FourthButton.vue";
+import FourthButton from "@/components/ui/buttons/FourthButton.vue";
 
 export default {
+  name:'FourthButtonPage',
   components: {
     PageLayout,
     FourthButton

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <FourthButtonPage />
     <RouterView />
     <ModalContainer />
   </div>
@@ -8,12 +7,10 @@
 
 <script>
 import ModalContainer from "@/components/parts/ModalContainer";
-import FourthButtonPage from "@/components/pages/FourthButtonPage.vue";
 
 export default {
   components: {
-    ModalContainer,
-    FourthButtonPage
+    ModalContainer
   }
 }
 </script>

@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomePage from '../components/pages/Home.vue'
-import { RouteNames } from './routes'
+import FourthButtonPage from "@/components/pages/FourthButtonPage.vue";
+import {RouteNames} from './routes'
 
 Vue.use(VueRouter)
 
@@ -10,6 +11,11 @@ const routes = [
     path: '/',
     name: RouteNames.HOME,
     component: HomePage
+  },
+  {
+    path:'/fourth_button',
+    name:RouteNames.FOURTH_BUTTON,
+    component: FourthButtonPage
   }
 ]
 
