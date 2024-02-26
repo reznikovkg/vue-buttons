@@ -1,6 +1,5 @@
 <template>
     <button class="btn" :style="btnStyle">
-       MENU  ≡
     </button>
 </template>
 
@@ -8,11 +7,11 @@
 export default {
     name: 'SecondButton',
     props: {
-        bgStart: {
+        startColor: {
             Type: String,
-            default: 'black'
+            default: 'blue'
         },
-        bgEnd: {
+        endColor: {
             Type: String,
             default: 'red'
         }
@@ -20,39 +19,34 @@ export default {
     computed: {
         btnStyle () {
             return {
-                '--bg-start': this.bgStart,
-                '--bg-end': this.bgEnd
+                '--stC': this.startColor,
+                '--enC': this.endColor
             };
         }
     }
 }
 </script>
 
-<style scoped lang="less"> 
+<style> 
 .btn {
-    border: none;
+    border-radius: 50px;
     position: relative;
     height: 50px;
     width: 150px;
     margin: 10px;
-    border-radius: 50px;
     font-size: large;
     cursor: pointer;
+    background: linear-gradient(white, white) padding-box, linear-gradient(90deg,  var(--stC), var(--enC)) border-box;
+    border: 4px solid transparent;
 
-    /*background:linear-gradient(90deg,blue,red);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/
-
-    &::before{
-        content: "";
-        position: absolute;
-        top: -4px;
-        right: -4px;
-        bottom: -4px;
-        left: -4px;
-        border-radius: 50px;
-        z-index: -1;
-        background:linear-gradient(90deg, var(--bg-start), var(--bg-end));
+    &::before {
+        content: "MENU ≡";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient(90deg, var(--stC), var(--enC));
     }
 }
 </style>

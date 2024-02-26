@@ -1,7 +1,6 @@
 <template>
   <div>
     <SecondButtonPage/>
-    
     <ModalContainer />
   </div>
 </template>
