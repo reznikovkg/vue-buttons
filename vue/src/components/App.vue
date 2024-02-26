@@ -1,22 +1,30 @@
 <template>
   <div>
-    <RouterView />
+    <SecondButtonPage/>
+    
     <ModalContainer />
   </div>
 </template>
 
 <script>
 import ModalContainer from "@/components/parts/ModalContainer";
+import SecondButtonPage from "@/components/pages/SecondButtonPage.vue"
 
 export default {
   components: {
-    ModalContainer
+    ModalContainer,
+    SecondButtonPage
   }
 }
 </script>
 
 <style lang="less">
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+
+
+.miu{
+  color: green;
+}
 
 body {
   margin: 0;
