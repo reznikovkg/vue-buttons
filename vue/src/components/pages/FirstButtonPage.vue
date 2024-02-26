@@ -20,6 +20,7 @@ import PageLayout from '../parts/PageLayout'
 import FirstButton from "@/components/ui/buttons/FirstButton.vue";
 
 export default {
+  name: 'FirstButtonPage',
   components: {
     FirstButton,
     PageLayout
@@ -27,13 +28,7 @@ export default {
 }
 </script>
 
-<style lang="less">
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #EEEEEE;
-}
-
+<style lang="less" scoped>
 .main-container {
   display: flex;
   flex-direction: column;

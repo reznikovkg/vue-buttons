@@ -1,11 +1,12 @@
 <template>
-  <button class="first-button" :class="getColor">
+  <button :class="['first-button', getColor]">
     <slot/>
   </button>
 </template>
 
 <script>
 export default {
+  name: 'FirstButton',
   props: {
     color: {
       type: String,
@@ -14,13 +15,13 @@ export default {
   },
   computed: {
     getColor() {
-      return this.color;
+      return `first-button-${this.color}`;
     }
   }
 }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
   .first-button {
     border: none;
     color: white;
@@ -28,6 +29,20 @@ export default {
     font-size: 18px;
     border-radius: 6px;
     position: relative;
+
+    &-green {
+      background: #5cbb98;
+    }
+
+    &-white {
+      background: #e6ebed;
+      color: #6e8a95;
+      border: 1px solid #d5dce0;
+    }
+
+    &-red {
+      background: #e0886a;
+    }
   }
 
   .first-button:after{
@@ -60,19 +75,5 @@ export default {
 
   .first-button:disabled::after {
     background-color: rgba(255, 255, 255, 0.4);
-  }
-
-  .green {
-    background: #5cbb98;
-  }
-
-  .white {
-    background: #e6ebed;
-    color: #6e8a95;
-    border: 1px solid #d5dce0;
-  }
-
-  .red {
-    background: #e0886a;
   }
 </style>
