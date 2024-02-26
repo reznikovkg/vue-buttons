@@ -1,20 +1,19 @@
 <template>
   <div>
-    <SeventhButton type="default" >DEFAULT</SeventhButton>
-    <SeventhButton type="primary" >PRIMARY</SeventhButton>
-    <SeventhButton type="info" >INFO</SeventhButton>
-    <SeventhButton type="success" >SUCCESS</SeventhButton>
-    <SeventhButton type="warning" >WARNING</SeventhButton>
-    <SeventhButton type="danger" >DANGER</SeventhButton>
+    <SeventhButtonPage />
+    <RouterView />
+    <ModalContainer />
   </div>
 </template>
 
 <script>
-import SeventhButton from './ui/buttons/SeventhButton.vue';
+import ModalContainer from './parts/ModalContainer.vue';
+import SeventhButtonPage from './pages/SeventhButtonPage.vue';
 
 export default {
   components: {
-    SeventhButton
+    ModalContainer,
+    SeventhButtonPage
   }
 }
 </script>
