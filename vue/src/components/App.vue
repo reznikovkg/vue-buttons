@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ThirteenthButton settingButton="red"/>
+    <ThirteenthButton setting-button="red"/>
     <RouterView />
     <ModalContainer />
   </div>
