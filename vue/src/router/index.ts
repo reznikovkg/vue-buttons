@@ -13,8 +13,8 @@ const routes = [
     component: HomePage
   },
   {
-    path: '/TwelfthButton',
-    name: RouteNames.TwelfthButton,
+    path: '/twelfth_button',
+    name: RouteNames.TWELFTH_BUTTON,
     component: TwelfthButtonPage
   }
 ]
