@@ -13,6 +13,11 @@ const routes = [
     component: HomePage
   },
   {
+    path: '/twelfth_button',
+    name: RouteNames.TWELFTH_BUTTON,
+    component: TwelfthButtonPage
+  },
+  {
     path: '/button_sixth',
     name: RouteNames.BUTTON_SIXTH,
     component: ButtonSixthPage

@@ -1,4 +1,5 @@
 export enum RouteNames {
   HOME = "HOME",
+  TWELFTH_BUTTON = "TWELFTH_BUTTON",
   BUTTON_SIXTH = "BUTTON_SIXTH"
 }
