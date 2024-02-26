@@ -29,7 +29,7 @@ export default {
         '--bg-start': this.bgStart,
         '--bg-end': this.bgEnd,
         '--box-shadow-color': this.boxShadowColor
-      };
+      }
     }
   }
 }
