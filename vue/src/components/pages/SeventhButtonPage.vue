@@ -1,6 +1,6 @@
 <template>
   <PageLayout>
-    <SeventhButton color1=#c9c9c9 color2=#e3e3e3 color3=#fdfdfd color4=#ffffff>
+    <SeventhButton color1=#c9c9c9 color2=#e3e3e3 color3=#fdfdfd color4=#ffffff textColor="black">
       DEFAULT
     </SeventhButton>
 
@@ -31,6 +31,7 @@ import PageLayout from '../parts/PageLayout';
 import SeventhButton from '../ui/buttons/SeventhButton.vue';
 
 export default {
+  name: 'SeventhButtons',
   components: {
     PageLayout,
     SeventhButton

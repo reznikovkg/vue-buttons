@@ -1,6 +1,6 @@
 <template>
   <button class="button" :style="buttonStyles" >
-    <slot>
+    <slot >
     </slot>
   </button>
 </template>
@@ -24,6 +24,10 @@ export default {
     color4: {
       type: String,
       default: 'default'
+    },
+    textColor: {
+      type: String,
+      default: 'white'
     }
   },
 
@@ -33,8 +37,9 @@ export default {
         '--color1': this.color1,
         '--color2': this.color2,
         '--color3': this.color3,
-        '--color4': this.color4
-      };
+        '--color4': this.color4,
+        '--textColor': this.textColor
+      }
     }
   }
 
@@ -49,15 +54,7 @@ export default {
   border: none;
   font-size: bold;
   background: linear-gradient(45deg,var(--color1) 0%,var(--color2) 50%,var(--color3) 50%,var(--color4) 100%);
-  
-  &::before {
-  }
-
-  &::after {
-  }
-
-  &:active {
-  }
+  color: var(--textColor);
 
   &:hover {
     transform: scale(0.95);
