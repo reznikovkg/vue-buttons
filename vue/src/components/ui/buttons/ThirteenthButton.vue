@@ -9,7 +9,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="less">
 .ThirteenthButton {
   width: 150px;
   height: 80px;

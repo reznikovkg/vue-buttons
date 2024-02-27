@@ -1,6 +1,5 @@
 <template>
   <div>
-    <ThirteenthButton setting-button="red"/>
     <RouterView />
     <ModalContainer />
   </div>
@@ -8,11 +7,9 @@
 
 <script>
 import ModalContainer from "@/components/parts/ModalContainer";
-import ThirteenthButton from "@/components/ui/ThirteenthButton.vue";
 
 export default {
   components: {
-    ThirteenthButton,
     ModalContainer
   }
 }
