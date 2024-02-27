@@ -48,25 +48,25 @@ export default {
     left: -7px;
     bottom: -7px;
   }
-}
 
-.button:hover::after {
-  transform: translate(14px, -14px);
-}
+  &:hover::after {
+    transform: translate(14px, -14px);
+  }
 
-.button-color--yellow::after {
-  background: #ecc956
-}
+  &-color--yellow::after {
+    background: #ecc956
+  }
 
-.button-color--red::after {
-  background: #dc4d4e;
-}
+  &-color--red::after {
+    background: #dc4d4e;
+  }
 
-.button-color--blue::after {
-  background: #539fe0;
-}
+  &-color--blue::after {
+    background: #539fe0;
+  }
 
-.button-color--purple::after {
-  background: #b96ee7
+  &-color--purple::after {
+    background: #b96ee7
+  }
 }
 </style>
