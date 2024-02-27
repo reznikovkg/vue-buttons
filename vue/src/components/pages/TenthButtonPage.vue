@@ -1,16 +1,16 @@
 <template>
   <PageLayout>
     <div class="flex-container">
-    <div>
-      <TenthButton color="red" rounded="true"> 
-        Strawberry 
-      </TenthButton>
-      <TenthButton color="green" rounded="true"> 
-        Apple 
-      </TenthButton>
-      <TenthButton color="blue" rounded="true"> 
-        Blueberry 
-      </TenthButton>
+      <div>
+        <TenthButton color="red" rounded="true"> 
+          Strawberry 
+        </TenthButton>
+        <TenthButton color="green" rounded="true"> 
+          Apple 
+        </TenthButton>
+        <TenthButton color="blue" rounded="true"> 
+          Blueberry 
+        </TenthButton>
       </div>
       <div>
         <TenthButton color="red" bordered="true" rounded="true"> 
