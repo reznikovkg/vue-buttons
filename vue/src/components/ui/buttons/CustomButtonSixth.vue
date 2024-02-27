@@ -16,7 +16,7 @@ export default {
     }
   },
   computed: {
-    colorChanger() {
+    colorChanger () {
       return 'button--' + this.type;
     }
   }
