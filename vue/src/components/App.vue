@@ -1,16 +1,19 @@
 <template>
   <div>
     <RouterView />
+    <NinthButtonPage />
     <ModalContainer />
   </div>
 </template>
 
 <script>
 import ModalContainer from "@/components/parts/ModalContainer";
+import NinthButtonPage from "@/components/pages/NinthButtonPage.vue";
 
 export default {
   components: {
-    ModalContainer
+    ModalContainer,
+    NinthButtonPage
   }
 }
 </script>
