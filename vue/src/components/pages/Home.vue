@@ -9,7 +9,7 @@
 
 <script>
 import PageLayout from '../parts/PageLayout'
-import { helpModal } from "@/mixins/modals";
+import {helpModal} from "@/mixins/modals";
 
 export default {
   name: 'HomePage',
@@ -19,3 +19,6 @@ export default {
   }
 }
 </script>
+
+<style>
+</style>
