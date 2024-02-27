@@ -35,7 +35,7 @@ section {
   box-sizing: border-box;
 
   &:last-child {
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -68,11 +68,13 @@ h2 {
     }
 
     &-v {
+
     }
   }
 
   &-loading {
     position: relative;
+
     &::after {
       content: '';
       position: absolute;
