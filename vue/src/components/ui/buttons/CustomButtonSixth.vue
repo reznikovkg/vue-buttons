@@ -12,12 +12,12 @@ export default {
   props: {
     type: {
       type: String,
-      default: 'Yellow'
+      default: 'yellow'
     }
   },
   computed: {
     colorChanger() {
-      return 'button-color--' + this.type;
+      return 'button--' + this.type;
     }
   }
 }
@@ -53,19 +53,19 @@ export default {
     transform: translate(14px, -14px);
   }
 
-  &-color--yellow::after {
+  &--yellow::after {
     background: #ecc956
   }
 
-  &-color--red::after {
+  &--red::after {
     background: #dc4d4e;
   }
 
-  &-color--blue::after {
+  &--blue::after {
     background: #539fe0;
   }
 
-  &-color--purple::after {
+  &--purple::after {
     background: #b96ee7
   }
 }
