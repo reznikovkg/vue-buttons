@@ -1,39 +1,22 @@
 <template>
-    <button class="sample-button" :style="buttonStyle">
-        <slot>
-        </slot>
-    </button>
+  <button class="sample-button" :class="buttonClass">
+    <slot>
+    </slot>
+  </button>
 </template>
 
 <script>
   export default {
     name: 'ComponentBtn',
     props: {
-      backgroundColor: {
+      type: {
         type: String,
-        default: 'white'
-      },
-      textColor: {
-        type: String,
-        default: 'white'
-      },
-      border: {
-        type: String,
-        default: 'none'
-      },
-      shadow: {
-        type: String,
-        default: 'none'
+        default: 'default'
       }
     },
     computed: {
-      buttonStyle() {
-        return {
-          '--btn-background-color': this.backgroundColor,
-          '--btn-text-color': this.textColor,
-          '--btn-border': this.border,
-          '--btn-shadow': this.shadow,
-        }
+      buttonClass () {
+        return `sample-button--${this.type}`;
       }
     }    
   }
@@ -44,18 +27,73 @@
     width: 110px;
     height: 35px;
     border-radius: 4px;
-    background: var(--btn-background-color);
-    color: var(--btn-text-color);
-    border: var(--btn-border);
-    box-shadow: var(--btn-shadow);
-    padding: 0.5% 1%;
-    box-sizing: border-box;
-    margin: 3% 0.75%;
     font-family: Calibri;
     font-size: 18px;
     color: white;
     cursor: pointer;
-    display: block;
-  }
+    border: none;
 
+    &--warning{
+      background-color: #ea3d2f;
+    }
+
+    &--positive {
+      background-color: #30a74f;
+    }
+
+    &--attention {
+      background-color: #f3aa18;
+    }     
+
+    &--smooth_red {
+      background-color: #fde4e1;
+      color: #ea3d2f;
+    }
+
+    &--smooth_green {
+      background-color: #dcf7e3;
+      color: #30a74f;
+    }
+
+    &--smooth_orange {
+      background-color: #fdf3d7;
+      color: #f3aa18;
+    }
+
+    &--ghost_red {
+      color: #ea3d2f;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #ea3d2f;
+    }
+
+    &--ghost_green {
+      color: #30a74f;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #30a74f;
+    }
+
+    &--ghost_orange {
+      color: #f3aa18;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #f3aa18;
+    }
+
+    &--raised_red {
+      color: #ea3d2f;
+      box-shadow: 0px 3px 5px -3px rgba(0, 0, 0, 0.3);
+    }
+
+    &--raised_green {
+      color: #30a74f;
+      box-shadow: 0px 3px 5px -3px rgba(0, 0, 0, 0.3);
+    }
+
+    &--raised_orange {
+      color: #f3aa18;
+      box-shadow: 0px 3px 5px -3px rgba(0, 0, 0, 0.3);
+    }
+  } 
 </style>
