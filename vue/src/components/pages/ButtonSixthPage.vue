@@ -1,24 +1,24 @@
 <template>
   <div>
-    <CustomButton/>
-    <CustomButton type="red">
+    <SixthButton/>
+    <SixthButton type="red">
       HALLO
-    </CustomButton>
-    <CustomButton type="blue">
+    </SixthButton>
+    <SixthButton type="blue">
       MARHABAN
-    </CustomButton>
-    <CustomButton type="purple">
+    </SixthButton>
+    <SixthButton type="purple">
       NI HAO
-    </CustomButton>
+    </SixthButton>
   </div>
 </template>
 
 <script>
-import CustomButton from "@/components/ui/buttons/CustomButtonSixth.vue";
+import SixthButton from "@/components/ui/buttons/CustomButtonSixth";
 
 export default {
   components: {
-    CustomButton
+    SixthButton
   }
 }
 </script>
