@@ -1,11 +1,9 @@
 <template>
   <PageLayout>
-    <div>
+    <section class="p-16">
       <div class="button-grid">
         <div class="button-grid__column">
-          <ComponentBtn type="warning">
-            WARNING
-          </ComponentBtn>
+          <ComponentBtn type="warning"/>
           <ComponentBtn type="positive">
             POSITIVE
           </ComponentBtn>
@@ -47,7 +45,7 @@
           </ComponentBtn>
         </div>
       </div>
-    </div>
+    </section>
   </PageLayout>
 </template>
 
