@@ -1,7 +1,7 @@
 <template>
   <div>
-    <RouterView />
     <NinthButtonPage />
+    <RouterView />
     <ModalContainer />
   </div>
 </template>
