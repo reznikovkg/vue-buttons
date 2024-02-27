@@ -6,20 +6,20 @@
 </template>
 
 <script>
-  export default {
-    name: 'ComponentBtn',
-    props: {
-      type: {
-        type: String,
-        default: 'default'
-      }
-    },
-    computed: {
-      buttonClass () {
-        return `sample-button--${this.type}`;
-      }
-    }    
-  }
+export default {
+  name: 'ComponentBtn',
+  props: {
+    type: {
+      type: String,
+      default: 'default'
+    }
+  },
+  computed: {
+    buttonClass () {
+      return `sample-button--${this.type}`;
+    }
+  }    
+}
 </script>
 
 <style scoped lang="less">
@@ -27,6 +27,7 @@
     width: 110px;
     height: 35px;
     border-radius: 4px;
+    background-color: white;
     font-family: Calibri;
     font-size: 18px;
     color: white;
@@ -38,7 +39,7 @@
     }
 
     &--positive {
-      background-color: #30a74f;
+      background-color: #37be5b;
     }
 
     &--attention {
@@ -46,17 +47,17 @@
     }     
 
     &--smooth_red {
-      background-color: #fde4e1;
+      background-color: lighten(#ea3d2f, 40%);
       color: #ea3d2f;
     }
 
     &--smooth_green {
-      background-color: #dcf7e3;
-      color: #30a74f;
+      background-color: lighten(#37be5b, 40%);
+      color: #37be5b;
     }
 
     &--smooth_orange {
-      background-color: #fdf3d7;
+      background-color: lighten(#f3aa18, 40%);
       color: #f3aa18;
     }
 
@@ -68,10 +69,10 @@
     }
 
     &--ghost_green {
-      color: #30a74f;
+      color: #37be5b;
       border-width: 1px;
       border-style: solid;
-      border-color: #30a74f;
+      border-color: #37be5b;
     }
 
     &--ghost_orange {
@@ -87,7 +88,7 @@
     }
 
     &--raised_green {
-      color: #30a74f;
+      color: #37be5b;
       box-shadow: 0px 3px 5px -3px rgba(0, 0, 0, 0.3);
     }
 

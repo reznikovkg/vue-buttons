@@ -8,21 +8,23 @@
   </PageLayout>
 </template>
 <script>
-  import PageLayout from '../parts/PageLayout';
-  import { helpModal } from "@/mixins/modals";
-  import { RouteNames } from '@/router/routes';
-  export default {
-    name: 'HomePage',
-    mixins: [helpModal],
-    components: {
-      PageLayout
-    },
-    methods: {
-      goToThirdButton() {
-        this.$router.push({ name: RouteNames.THIRD_BUTTON });
-      }
+import PageLayout from '../parts/PageLayout';
+import { helpModal } from "@/mixins/modals";
+import { RouteNames } from '@/router/routes';
+
+export default {
+  name: 'HomePage',
+  mixins: [helpModal],
+  components: {
+    PageLayout
+  },
+  methods: {
+    goToThirdButton() {
+      this.$router.push({ name: RouteNames.THIRD_BUTTON });
     }
   }
+}
 </script>
+
 <style>
 </style>

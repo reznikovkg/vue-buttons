@@ -30,15 +30,16 @@
 </template>
 
 <script>
-  import PageLayout from '../parts/PageLayout';
-  import ComponentBtn from "@/components/ui/buttons/ComponentBtn.vue";
-  export default {
-    name: 'ThirdButtonPage',
-    components: {
-      PageLayout,
-      ComponentBtn
-    }
+import PageLayout from '../parts/PageLayout';
+import ComponentBtn from "@/components/ui/buttons/ComponentBtn.vue";
+
+export default {
+  name: 'ThirdButtonPage',
+  components: {
+    PageLayout,
+    ComponentBtn
   }
+}
 </script>
 
 <style lang="less">
