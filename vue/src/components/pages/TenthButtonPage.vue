@@ -54,6 +54,7 @@ import PageLayout from '../parts/PageLayout';
 import TenthButton from "@/components/ui/buttons/TenthButton.vue";
 
 export default {
+  name: 'TenthButtonPage',
   components: {
     PageLayout,
     TenthButton
