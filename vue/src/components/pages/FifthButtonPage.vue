@@ -1,10 +1,10 @@
 <template>
   <div>
-    <FifthButton type="Blue"/>
-    <FifthButton type="Green"/>
-    <FifthButton type="Red"/>
-    <FifthButton type="Orange"/>
-    <FifthButton type="Black"/>
+    <FifthButton type="blue"/>
+    <FifthButton type="green"/>
+    <FifthButton type="red"/>
+    <FifthButton type="orange"/>
+    <FifthButton type="black"/>
   </div>
 </template>
 

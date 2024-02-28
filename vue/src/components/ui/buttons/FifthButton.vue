@@ -17,14 +17,13 @@ export default {
   },
   computed: {
     customStyle() {
-      return "btn" + this.type;
+      return "btn5--" + this.type;
     }
   }
 }
 </script>
 
 <style lang="less">
-
 .btn5 {
   color: white;
   font-size: 24px;
@@ -33,46 +32,46 @@ export default {
   border: none;
   border-radius: 5px;
   position: relative;
-}
 
-.btn5:hover {
-  padding-top: 25px;
-  padding-bottom: 45px;
-}
+  &:hover {
+    padding-top: 25px;
+    padding-bottom: 45px;
+  }
 
-.btn5:hover::before {
-  content: '';
-  height: 15px;
-  width: 100%;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.1);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
+  &:hover::before {
+    content: '';
+    height: 15px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
 
-.btnDefault {
-  background: #FFF;
-}
+  &--default {
+    background: #FFF;
+  }
 
-.btnBlue {
-  background: #19a6cb;
-}
+  &--blue {
+    background: #19a6cb;
+  }
 
-.btnGreen {
-  background: #7fb534;
-}
+  &--green {
+    background: #7fb534;
+  }
 
-.btnRed {
-  background: #cd2f31;
-}
+  &--red {
+    background: #cd2f31;
+  }
 
-.btnOrange {
-  background: #ea452c;
-}
+  &--orange {
+    background: #ea452c;
+  }
 
-.btnBlack {
-  background: #28304b;
+  &--black {
+    background: #28304b;
+  }
 }
 </style>
