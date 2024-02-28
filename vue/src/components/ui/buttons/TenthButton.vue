@@ -1,5 +1,5 @@
 <template>
-    <button class="tenth-btn" :class="tenthBtnClass">
+  <button class="tenth-btn" :class="tenthBtnClass">
       <slot />
   </button>
 </template>
@@ -40,7 +40,7 @@ export default {
   font-size: 14px;
   font-weight: 700;
   padding: 5px 20px;
-  box-shadow: 0px 2px 2px #331d1d;
+  box-shadow: 0px 4px 4px #000000;
   margin: 10px;
   cursor: pointer;
 
