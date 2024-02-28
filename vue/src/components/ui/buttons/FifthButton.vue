@@ -16,7 +16,7 @@ export default {
     }
   },
   computed: {
-    customStyle() {
+    customStyle () {
       return "btn5--" + this.type;
     }
   }
