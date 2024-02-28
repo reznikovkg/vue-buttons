@@ -6,8 +6,8 @@
     </section>
   </PageLayout>
 </template>
-<script>
 
+<script>
 import PageLayout from '../parts/PageLayout'
 import { helpModal } from "@/mixins/modals";
 

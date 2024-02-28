@@ -3,44 +3,44 @@
     <section class="p-16">
       <div class="button-grid">
         <div class="button-grid__column">
-          <ComponentBtn type="warning"/>
-          <ComponentBtn type="positive">
+          <ComponentBtn type="warning" mode="primary"/>
+          <ComponentBtn type="positive" mode="primary">
             POSITIVE
           </ComponentBtn>
-          <ComponentBtn type="attention">
+          <ComponentBtn type="attention" mode="primary">
             ATTENTION
           </ComponentBtn>
         </div>
         <div class="button-grid__column">
-          <ComponentBtn type="smooth-red">
+          <ComponentBtn type="warning" mode="smooth">
             SMOOTH
           </ComponentBtn>
-          <ComponentBtn type="smooth-green">
+          <ComponentBtn type="positive" mode="smooth">
             SMOOTH
           </ComponentBtn>
-          <ComponentBtn type="smooth-orange">
+          <ComponentBtn type="attention" mode="smooth">
             SMOOTH
           </ComponentBtn>
         </div>
         <div class="button-grid__column">
-          <ComponentBtn type="ghost-red">
+          <ComponentBtn type="warning" mode="ghost">
             GHOST
           </ComponentBtn>
-          <ComponentBtn type="ghost-green">
+          <ComponentBtn type="positive" mode="ghost">
             GHOST
           </ComponentBtn>
-          <ComponentBtn type="ghost-orange">
+          <ComponentBtn type="attention" mode="ghost">
             GHOST
           </ComponentBtn>
         </div>
         <div class="button-grid__column">
-          <ComponentBtn type="raised-red">
+          <ComponentBtn type="warning" mode="raised">
             RAISED
           </ComponentBtn>
-          <ComponentBtn type="raised-green">
+          <ComponentBtn type="positive" mode="raised">
             RAISED
           </ComponentBtn>
-          <ComponentBtn type="raised-orange">
+          <ComponentBtn type="attention" mode="raised">
             RAISED
           </ComponentBtn>
         </div>
