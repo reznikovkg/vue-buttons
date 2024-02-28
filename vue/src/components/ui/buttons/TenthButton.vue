@@ -1,6 +1,6 @@
 <template>
   <button class="tenth-btn" :class="tenthBtnClass">
-      <slot />
+    <slot />
   </button>
 </template>
 
