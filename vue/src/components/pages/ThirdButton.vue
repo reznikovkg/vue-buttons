@@ -12,35 +12,35 @@
           </ComponentBtn>
         </div>
         <div class="button-grid__column">
-          <ComponentBtn type="smooth_red">
+          <ComponentBtn type="smooth-red">
             SMOOTH
           </ComponentBtn>
-          <ComponentBtn type="smooth_green">
+          <ComponentBtn type="smooth-green">
             SMOOTH
           </ComponentBtn>
-          <ComponentBtn type="smooth_orange">
+          <ComponentBtn type="smooth-orange">
             SMOOTH
           </ComponentBtn>
         </div>
         <div class="button-grid__column">
-          <ComponentBtn type="ghost_red">
+          <ComponentBtn type="ghost-red">
             GHOST
           </ComponentBtn>
-          <ComponentBtn type="ghost_green">
+          <ComponentBtn type="ghost-green">
             GHOST
           </ComponentBtn>
-          <ComponentBtn type="ghost_orange">
+          <ComponentBtn type="ghost-orange">
             GHOST
           </ComponentBtn>
         </div>
         <div class="button-grid__column">
-          <ComponentBtn type="raised_red">
+          <ComponentBtn type="raised-red">
             RAISED
           </ComponentBtn>
-          <ComponentBtn type="raised_green">
+          <ComponentBtn type="raised-green">
             RAISED
           </ComponentBtn>
-          <ComponentBtn type="raised_orange">
+          <ComponentBtn type="raised-orange">
             RAISED
           </ComponentBtn>
         </div>

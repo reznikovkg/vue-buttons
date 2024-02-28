@@ -47,53 +47,47 @@ export default {
     background-color: #f3aa18;
   }
 
-  &--smooth_red {
+  &--smooth-red {
     background-color: lighten(#ea3d2f, 40%);
     color: #ea3d2f;
   }
 
-  &--smooth_green {
+  &--smooth-green {
     background-color: lighten(#37be5b, 40%);
     color: #37be5b;
   }
 
-  &--smooth_orange {
+  &--smooth-orange {
     background-color: lighten(#f3aa18, 40%);
     color: #f3aa18;
   }
 
-  &--ghost_red {
+  &--ghost-red {
     color: #ea3d2f;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #ea3d2f;
+    border: 1px solid #ea3d2f;
   }
 
-  &--ghost_green {
+  &--ghost-green {
     color: #37be5b;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #37be5b;
+    border: 1px solid #37be5b;
   }
 
-  &--ghost_orange {
+  &--ghost-orange {
     color: #f3aa18;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #f3aa18;
+    border: 1px solid #f3aa18;
   }
 
-  &--raised_red {
+  &--raised-red {
     color: #ea3d2f;
     box-shadow: 0px 3px 5px -3px rgba(0, 0, 0, 0.3);
   }
 
-  &--raised_green {
+  &--raised-green {
     color: #37be5b;
     box-shadow: 0px 3px 5px -3px rgba(0, 0, 0, 0.3);
   }
 
-  &--raised_orange {
+  &--raised-orange {
     color: #f3aa18;
     box-shadow: 0px 3px 5px -3px rgba(0, 0, 0, 0.3);
   }
