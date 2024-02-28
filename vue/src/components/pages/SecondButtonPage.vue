@@ -1,12 +1,12 @@
 <template>
   <PageLayout>
     <div>
-      <SecondButton style="--stC:#FFA500; --enC:#DC143C"/>
-      <SecondButton style="--stC:#00BFFF; --enC:#9400D3"/>
+      <SecondButton type="orange"/>
+      <SecondButton type="light"/>
     </div>
     <div>
       <SecondButton/>
-      <SecondButton style="--stC:#C71585; --enC:#9400D3"/>
+      <SecondButton type="purple"/>
     </div>
   </PageLayout>
 </template>

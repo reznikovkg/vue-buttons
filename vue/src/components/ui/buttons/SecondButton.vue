@@ -1,6 +1,6 @@
 <template>
-    <button class="btn" :style="btnStyle">
-      <slot>       
+    <button class="btn" :class="btnClass">
+      <slot>
       </slot>
     </button>
 </template>
@@ -9,21 +9,14 @@
 export default {
   name: 'SecondButton',
   props: {
-    startColor: {
-      Type: String,
+    type: {
+      type: String,
       default: 'blue'
-    },
-    endColor: {
-      Type: String,
-      default: 'red'
     }
   },
   computed: {
-    btnStyle () {
-      return {
-        '--stC': this.startColor,
-        '--enC': this.endColor
-      };
+    btnClass () {
+      return 'btn--' + this.type;
     }
   }
 }
@@ -36,9 +29,8 @@ export default {
   height: 50px;
   width: 150px;
   margin: 10px;
-  font-size: 20px;
+  font-size: large;
   cursor: pointer;
-  background: linear-gradient(white, white) padding-box, linear-gradient(90deg,  var(--stC), var(--enC)) border-box;
   border: 4px solid transparent;
 
   &::before {
@@ -48,7 +40,32 @@ export default {
     align-items: center;
     color: transparent;
     background-clip: text;
-    background-image: linear-gradient(90deg, var(--stC), var(--enC));
+  }
+
+  &--orange {
+    background: linear-gradient(white, white) padding-box, linear-gradient(90deg,  #FFA500, #DC143C) border-box;
+  }
+  &--light {
+    background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #00BFFF, #9400D3) border-box;
+  }
+  &--blue {
+    background: linear-gradient(white, white) padding-box, linear-gradient(90deg, blue, red) border-box;
+  }
+  &--purple {
+    background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #C71585, #9400D3) border-box;
+  }
+
+  &--orange::before {
+    background-image: linear-gradient(90deg, #FFA500, #DC143C);
+  }
+  &--light::before {
+    background-image: linear-gradient(90deg, #00BFFF, #9400D3);
+  }
+  &--blue::before {
+    background-image: linear-gradient(90deg, blue, red);
+  }
+  &--purple::before {
+    background-image: linear-gradient(90deg, #C71585, #9400D3);
   }
 }
 </style>
