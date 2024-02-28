@@ -1,6 +1,6 @@
 <template>
   <button
-    :class="{ button:true}"
+    :class="{ button: true }"
     :disabled="this.disabled"
   >
     <slot>
