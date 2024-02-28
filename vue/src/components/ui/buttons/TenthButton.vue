@@ -8,16 +8,25 @@
 export default {
   name: 'TenthButton',
   props: {
-    color: String,
-    rounded: Boolean,
-    bordered: Boolean
+    color: {
+      type: String,
+      default: 'red'
+    },
+    rounded: {
+      type: Boolean,
+      default: false
+    },
+    bordered: {
+      type: Boolean,
+      default: false
+    }
   },
   computed: {
     tenthBtnClass () {
       return [
         `tenth-btn--${this.color}`,
         this.rounded ? `tenth-btn--rounded` : ``,
-        this.bordered ? `` : `tenth-btn--bordered`
+        this.bordered ? `` : `tenth-btn--nobordered`
       ];
     }
   }
@@ -29,9 +38,9 @@ export default {
 
 .tenth-btn {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   padding: 5px 20px;
-  box-shadow: 0px 2px 2px #000000;
+  box-shadow: 0px 2px 2px #331d1d;
   margin: 10px;
   cursor: pointer;
 
@@ -39,7 +48,7 @@ export default {
     border-radius: 20px;
   }
 
-  &--bordered {
+  &--nobordered {
     border-color: transparent !important;
   }
   
