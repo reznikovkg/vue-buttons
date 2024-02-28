@@ -36,18 +36,18 @@ export default {
   &:hover {
     padding-top: 25px;
     padding-bottom: 45px;
-  }
 
-  &:hover::before {
-    content: '';
-    height: 15px;
-    width: 100%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    &::before {
+      content: '';
+      height: 15px;
+      width: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
   }
 
   &--default {
