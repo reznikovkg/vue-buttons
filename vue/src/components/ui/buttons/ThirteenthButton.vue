@@ -1,64 +1,62 @@
 <template>
-  <button class="ThirteenthButton" :class="settingButton">Button</button>
+  <button class="thirteenth-btn" :class="className">
+    <slot>
+      Button
+    </slot>
+  </button>
 </template>
 
 <script>
 export default {
-  name: 'ThirteenthButton',
-  props: ['settingButton'],
+  name: "ThirteenthButton",
+  props: {
+    type: String
+  },
+  computed: {
+    className () {
+      return `thirteenth-btn--${this.type}`;
+    }
+  }
 }
 </script>
 
 <style scoped lang="less">
-.ThirteenthButton {
-  width: 150px;
-  height: 80px;
-  transition: .3s all;
+.thirteenth-btn {
+  width: 140px;
+  height: 60px;
   background-color: #F7F7FA;
-  color: #5C5D68;
+  color: #4A4B57;
   border-radius: 5px;
+  font-family: sans-serif;
   font-size: 24px;
-  box-shadow: -1px 21px 57px -12px rgba(0, 0, 0, 0.75);
+  letter-spacing: 1px;
   font-weight: 700;
-  margin: 52px;
-  border: 1px solid #F7F7FA;
+  box-shadow: 0px 10px 12px 0px rgb(206, 206, 209);
+  border: none;
+  transition: transform 1s;
 
   &:hover {
     cursor: pointer;
+    transform: scale(0.7);
+    font-weight: 500;
   }
 
-  &:active {
-    transform: scale(0.90);
-    font-weight: 600;
+  &--blue {
+    color: #2164D1;
+    background-color: #F6F8FF;
+    box-shadow: 0px 10px 12px 0px rgb(190, 214, 245);
   }
-}
 
-.black {
-  color: #5C5D68;
-  background-color: #F7F7FA;
-  border: 1px solid #F7F7FA;
-  box-shadow: -2px 11px 22px -2px rgba(0, 0, 0, 0.75);
-}
+  &--green {
+    color: #38833A;
+    background-color: #F5FAF5;
+    box-shadow: 0px 10px 12px 0px rgb(194, 221, 198);
+  }
 
-.blue {
-  color: #2164D1;
-  background-color: #F7F7FA;
-  border: 1px solid #F7F7FA;
-  box-shadow: -2px 11px 22px -2px #2164D1;
-}
-
-.green {
-  color: #38833A;
-  background-color: #F5FAF5;
-  border: 1px solid #F5FAF5;
-  box-shadow: -2px 11px 22px -2px #38833A;
-}
-
-.red {
-  color: #C7372D;
-  background-color: #F7EBEA;
-  border: 1px solid #F7EBEA;
-  box-shadow: -2px 11px 22px -2px #C7372D;
+  &--red {
+    color: #C8372D;
+    background-color: #FEF2F1;
+    box-shadow: 0px 10px 12px 0px rgb(246, 194, 192);
+  }
 }
 </style>
-  
