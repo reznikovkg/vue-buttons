@@ -3,8 +3,6 @@
     <h1 class="title">Button 9 Issue #10 </h1>
     <div class="grid-container">
       <NinthButton />
-      <NinthButton />
-      <NinthButton />
       <NinthButton :disabled="true" />
     </div>
   </PageLayout>

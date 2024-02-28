@@ -1,9 +1,6 @@
 <template>
   <button
-    :class="{ button: true, disabled: isDisabled, pressed: isPressed, active: isActive}"
-    @mousedown="handleMouseDown"
-    @mouseup="handleMouseUp"
-    @click="toggleActive"
+    :class="{ button: true, disabled: isDisabled, active: isActive}"
     :disabled="isDisabled"
   >
     <slot>
@@ -20,23 +17,15 @@ export default {
       type: Boolean,
       default: false
     },
+    active: {
+      type: Boolean,
+      default: false
+    },
   },
-  data() {
+  data () {
     return {
       isDisabled: this.disabled,
-      isPressed: false,
-      isActive: false
-    };
-  },
-  methods: {
-    handleMouseDown() {
-      this.isPressed = true;
-    },
-    handleMouseUp() {
-      this.isPressed = false;
-    },
-    toggleActive() {
-      this.isActive = !this.isActive;
+      isActive: false,
     }
   }
 }
@@ -49,18 +38,14 @@ export default {
   border: 1px solid #ebeef2;
   border-radius: 8px;
   padding: 12px 20px;
-  box-shadow:
-        -6px -6px 16px rgba(255, 255, 255, 0.8),
-         3px  3px 16px rgba(4, 4, 47, 0.2);
+  box-shadow: -6px -6px 16px rgba(255, 255, 255, 0.8), 3px  3px 16px rgba(4, 4, 47, 0.2);
   transition: all 0.3s ease;
   cursor: pointer;
   font-weight: bold;
   width: 110px;
 
-  &:active { /* эта херня должна работать, но она не работает... */
-    box-shadow:
-          inset -3px -3px 16px rgb(235, 238, 242),
-          inset 2px 2px 16px rgba(3, 3, 47, 0.2);
+  &:active {
+    box-shadow: inset -3px -3px 16px rgb(235, 238, 242), inset 2px 2px 16px rgba(3, 3, 47, 0.2);
     background-color: #e4e6ee;
     color: #88a2fc;
   }
@@ -77,17 +62,13 @@ export default {
   &.pressed {
     background-color: #e4e6ee;
     color: #5971ab;
-    box-shadow:
-          inset -3px -3px 16px rgb(235, 238, 242),
-          inset 2px 2px 16px rgba(3, 3, 47, 0.2);
+    box-shadow: inset -3px -3px 16px rgb(235, 238, 242), inset 2px 2px 16px rgba(3, 3, 47, 0.2);
   }
 
   &:disabled {
     color: #bbbbbb;
     cursor: not-allowed;
-    box-shadow:
-          -6px -6px 16px rgba(255, 255, 255, 0.05),
-           6px 6px 16px rgba(0, 0, 0, 0.05);
+    box-shadow: -6px -6px 16px rgba(255, 255, 255, 0.05), 6px 6px 16px rgba(0, 0, 0, 0.05);
   }
 }
 </style>
