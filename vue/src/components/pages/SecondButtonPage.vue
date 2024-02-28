@@ -1,4 +1,4 @@
-  <template>
+<template>
   <PageLayout>
     <div>
       <SecondButton style="--stC:#FFA500; --enC:#DC143C"/>
@@ -9,20 +9,20 @@
       <SecondButton style="--stC:#C71585; --enC:#9400D3"/>
     </div>
   </PageLayout>
-  </template>
+</template>
   
-  <script>
-  import PageLayout from '../parts/PageLayout';
-  import SecondButton from "@/components/ui/buttons/SecondButton.vue";
+<script>
+import PageLayout from '../parts/PageLayout';
+import SecondButton from "@/components/ui/buttons/SecondButton.vue";
   
-  export default {
-    name: 'SecondButtonPage',
-    components: {
-      PageLayout,
-      SecondButton
-    }
+export default {
+  name: 'SecondButtonPage',
+  components: {
+    PageLayout,
+    SecondButton
   }
-  </script>
+}
+</script>
 
-  <style>
-  </style>
+<style>
+</style>
