@@ -14,7 +14,7 @@ export default {
     }
   },
   computed: {
-    getColor() {
+    getColor () {
       return `first-button--${this.color}`;
     }
   }
