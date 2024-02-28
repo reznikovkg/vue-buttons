@@ -7,7 +7,6 @@
 
 <script>
 import ModalContainer from "@/components/parts/ModalContainer";
-
 export default {
   components: {
     ModalContainer

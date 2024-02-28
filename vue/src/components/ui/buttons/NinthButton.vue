@@ -1,7 +1,7 @@
 <template>
   <button
-    :class="{ button: true, disabled: isDisabled, active: isActive}"
-    :disabled="isDisabled"
+    :class="{ button:true}"
+    :disabled="this.disabled"
   >
     <slot>
       Button
@@ -21,12 +21,6 @@ export default {
       type: Boolean,
       default: false
     },
-  },
-  data () {
-    return {
-      isDisabled: this.disabled,
-      isActive: false,
-    }
   }
 }
 </script>
