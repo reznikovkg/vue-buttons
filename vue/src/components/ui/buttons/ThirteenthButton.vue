@@ -10,11 +10,14 @@
 export default {
   name: "ThirteenthButton",
   props: {
-    type: String
+    color: {
+      type: String,
+      default: 'black'
+    }
   },
   computed: {
     className () {
-      return `thirteenth-btn--${this.type}`;
+      return `thirteenth-btn--${this.color}`;
     }
   }
 }
@@ -24,14 +27,11 @@ export default {
 .thirteenth-btn {
   width: 140px;
   height: 60px;
-  background-color: #F7F7FA;
-  color: #4A4B57;
   border-radius: 5px;
   font-family: sans-serif;
   font-size: 24px;
   letter-spacing: 1px;
   font-weight: 700;
-  box-shadow: 0px 10px 12px 0px rgb(206, 206, 209);
   border: none;
   transition: transform 1s;
 
@@ -39,6 +39,12 @@ export default {
     cursor: pointer;
     transform: scale(0.7);
     font-weight: 500;
+  }
+
+  &--black {
+    color: #4A4B57;
+    background-color: #F7F7FA;
+    box-shadow: 0px 10px 12px 0px rgb(206, 206, 209);
   }
 
   &--blue {

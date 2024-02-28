@@ -1,9 +1,9 @@
 <template>
   <div class="wrapper">
     <ThirteenthButton />
-    <ThirteenthButton type="blue"/>
-    <ThirteenthButton type="green"/>
-    <ThirteenthButton type="red"/>
+    <ThirteenthButton color="blue"/>
+    <ThirteenthButton color="green"/>
+    <ThirteenthButton color="red"/>
   </div>
 </template>
 
