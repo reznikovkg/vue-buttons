@@ -10,9 +10,6 @@ import Button8thPage from '@/components/pages/Button8thPage.vue'
 import ThirteenthButtonPage from "../components/ui/buttons/ThirteenthButton.vue";
 import FirstButtonPage from "@/components/pages/FirstButtonPage.vue";
 import TenthButtonPage from "@/components/pages/TenthButtonPage.vue"
-import ButtonSixthPage from "@/components/pages/ButtonSixthPage.vue"
-import FourthButtonPage from "@/components/pages/FourthButtons.vue";
-import TwelfthButtonPage from '../components/pages/TwelfthButtonPage.vue'
 
 Vue.use(VueRouter)
 
