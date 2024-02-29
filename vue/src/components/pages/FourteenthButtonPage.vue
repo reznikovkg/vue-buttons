@@ -11,7 +11,6 @@
   </div>
 </template>
 
-
 <script>
 import FourteenthButton from "@/components/ui/buttons/FourteenthButton.vue";
   

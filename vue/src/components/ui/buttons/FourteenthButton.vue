@@ -67,14 +67,14 @@ export default {
 
   &--ok {
 
-    &::before{
+    &::before {
       content:"✔"
     }
   }
 
   &--canсel {
 
-    &::before{
+    &::before {
       content:"✖"
     }
   }
@@ -84,11 +84,11 @@ export default {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    &::after{
+    &::after {
       background: linear-gradient(white, white) padding-box, linear-gradient(90deg,  #FFCC00, #C71585) border-box;
     }
 
-    &::before{
+    &::before {
       background-image: linear-gradient(90deg,  #FFCC00, #C71585);
     }
   }
@@ -97,11 +97,11 @@ export default {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    &::after{
+    &::after {
       background: linear-gradient(white, white) padding-box, linear-gradient(90deg,  #00FFFF, #0000FF) border-box;
     }
     
-    &::before{
+    &::before {
       background-image: linear-gradient(90deg,  #00FFFF, #0000FF);
     }
   }
