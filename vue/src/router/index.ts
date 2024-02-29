@@ -11,7 +11,6 @@ import FourthButtonPage from "@/components/pages/FourthButtons.vue";
 import TwelfthButtonPage from '../components/pages/TwelfthButtonPage.vue'
 import ThirdButtonPage from '../components/pages/ThirdButtonPage.vue'
 
-
 Vue.use(VueRouter)
 
 const routes = [
