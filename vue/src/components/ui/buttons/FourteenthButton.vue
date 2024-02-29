@@ -1,9 +1,9 @@
 <template>
-    <button class="btn" :class="btnClass">
-      <slot>
-        Ok
-      </slot>
-    </button>
+  <button class="btn" :class="btnClass">
+    <slot>
+      Ok
+    </slot>
+  </button>
 </template>
 
 <script>
