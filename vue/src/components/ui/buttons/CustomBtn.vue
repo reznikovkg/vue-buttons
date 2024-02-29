@@ -1,22 +1,29 @@
+
 <template>
-  <div id="buttons">
-    <button id="successful-button" @click="change">
-      SUCCESS
-    </button>
-    <button id="info-button" @click="change">
-      INFO
-    </button>
-    <button id="warning-button" @click="change">
-      WARNING
-    </button>
-    <button id="danger-button" @click="change">
-      DANGER
-    </button>
-  </div>
+  <button class="custom-btn" :class="className">
+    <slot>
+      content
+    </slot>
+  </button>
 </template>
 
+<script>
+export default {
+  name: "CustomBtn",
+  props: {
+    type: String,
+  },
+  computed: {
+    className () {
+      return `custom-btn__${this.type}`;
+
+    }
+  }
+}
+</script>
+
 <style scoped lang="less">
-  button {
+  .custom-btn {
     font-family: "Montserrat Alternates", sans-serif;
     padding: 15px 32px;
     text-align: center;
@@ -24,78 +31,61 @@
     display: inline-block;
     font-size: 16px;
     margin: 10px;
-  }
+    border: 2px solid;
 
-  #successful-button:hover {
-    background-color: white;
-    color: #04AA6D;
-    border: 2px solid #04AA6D;
-  }
+    &__successful {
+      background-color: #04AA6D;
+      color: white;
+      border: 2px solid;
 
-  #successful-button {
-    background-color: #04AA6D;
-    color: white;
-    border: 2px solid #04AA6D;
-  }
+      &:active {
+        color: white;
+        background-color: #04AA6D;
+        border-radius: 50px;
+      }
 
-  #successful-button:active {
-    background-color: #04AA6D;
-    color: white;
-    border-radius: 50px;
-  }
+      &:hover {
+        background-color: white;
+        color: #04AA6D;
+        border: 2px solid #04AA6D;
+      }
+    }
 
-  #info-button {
-    background-color: #f0c502;
-    color: white;
-    border: 2px solid #f0c502;
-  }
+    &__info {
+      background-color: #f0c502;
+      color: white;
+      border: 2px solid #f0c502;
 
-  #info-button:hover {
-    background-color: white;
-    color: #f0c502;
-    border: 2px solid #f0c502;
-  }
+      &:hover {
+        background-color: white;
+        color: #f0c502;
+        border: 2px solid #f0c502;
+      }
+    }
 
-  #info-button:active {
-    background-color: #f0c502;
-    color: white;
-    border-radius: 50px;
-  }
+    &__warning {
+      background-color: #e17b01;
+      color: white;
+      border: 2px solid #e17b01;
 
-  #warning-button {
-    background-color: #e17b01;
-    color: white;
-    border: 2px solid #e17b01;
-  }
+      &:hover {
+        background-color: white;
+        color: #e17b01;
+        border: 2px solid #e17b01;
+      }
+    }
 
-  #warning-button:hover {
-    background-color: white;
-    color: #e17b01;
-    border: 2px solid #e17b01;
-  }
+    &__danger {
+      background-color: #b8154c;
+      color: white;
+      border: 2px solid #b8154c;
 
-  #warning-button:active {
-    background-color: #e17b01;
-    color: white;
-    border-radius: 50px;
-  }
-
-  #danger-button {
-    background-color: #b8154c;
-    color: white;
-    border: 2px solid #b8154c;
-  }
-
-  #danger-button:hover {
-    background-color: white;
-    color: #b8154c;
-    border: 2px solid #b8154c;
-  }
-
-  #danger-button:active {
-    background-color: #b8154c;
-    color: white;
-    border-radius: 50px;
+      &:hover {
+        background-color: white;
+        color: #b8154c;
+        border: 2px solid #b8154c;
+      }
+    }
   }
 </style>
 
