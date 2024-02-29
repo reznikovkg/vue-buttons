@@ -1,6 +1,7 @@
 <template>
     <button class="btn" :class="btnClass">
       <slot>
+        MENU ≡
       </slot>
     </button>
 </template>
@@ -44,28 +45,27 @@ export default {
 
   &--orange {
     background: linear-gradient(white, white) padding-box, linear-gradient(90deg,  #FFA500, #DC143C) border-box;
+    &::before{
+      background-image: linear-gradient(90deg, #FFA500, #DC143C);
+    }
   }
   &--light {
     background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #00BFFF, #9400D3) border-box;
+    &::before {
+      background-image: linear-gradient(90deg, #00BFFF, #9400D3);
+    }
   }
   &--blue {
-    background: linear-gradient(white, white) padding-box, linear-gradient(90deg, blue, red) border-box;
+    background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #0000FFFF, #FF0000FF) border-box;
+    &::before {
+      background-image: linear-gradient(90deg, #0000FFFF, #FF0000FF);
+    }
   }
   &--purple {
     background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #C71585, #9400D3) border-box;
-  }
-
-  &--orange::before {
-    background-image: linear-gradient(90deg, #FFA500, #DC143C);
-  }
-  &--light::before {
-    background-image: linear-gradient(90deg, #00BFFF, #9400D3);
-  }
-  &--blue::before {
-    background-image: linear-gradient(90deg, blue, red);
-  }
-  &--purple::before {
-    background-image: linear-gradient(90deg, #C71585, #9400D3);
+    &::before {
+      background-image: linear-gradient(90deg, #C71585, #9400D3);
+    }
   }
 }
 </style>
