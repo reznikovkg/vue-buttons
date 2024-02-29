@@ -5,6 +5,7 @@ import {RouteNames} from './routes'
 import ButtonSixthPage from "@/components/pages/ButtonSixthPage.vue"
 import FourthButtonPage from "@/components/pages/FourthButtons.vue";
 import TwelfthButtonPage from '../components/pages/TwelfthButtonPage.vue'
+import FourteenthButtonPage from '../components/pages/FourteenthButtonPage.vue'
 
 Vue.use(VueRouter)
 
@@ -28,6 +29,11 @@ const routes = [
     path: '/twelfth_button',
     name: RouteNames.TWELFTH_BUTTON,
     component: TwelfthButtonPage
+  },
+  {
+    path: '/fourteenth_button',
+    name: RouteNames.FOURTEENTH_BUTTON,
+    component: FourteenthButtonPage
   }
 ]
 
