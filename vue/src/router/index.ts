@@ -31,8 +31,8 @@ const routes = [
     component: TwelfthButtonPage
   },
   {
-    path: '/FifthButton',
-    name: RouteNames.FifthButton,
+    path: '/fifth_button',
+    name: RouteNames.FIFTH_BUTTON,
     component: FifthButtonPage
 
   }
