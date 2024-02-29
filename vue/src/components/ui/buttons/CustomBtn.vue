@@ -1,25 +1,3 @@
-<script>
-  export default {
-    name: "CustomBtn",
-    data () {
-      return {
-        status: 1
-      }
-    },
-    methods: {
-      change () {
-        this.status *= -1
-        let status = this.status;
-
-        if (status === -1)
-          this.$el.id = this.$el.id.concat("-clicked")
-        else
-          this.$el.id = this.$el.id.replace("-clicked", "")
-      }
-    }
-  }
-</script>
-
 <template>
   <div id="buttons">
     <button id="successful-button" @click="change">
@@ -60,7 +38,7 @@
     border: 2px solid #04AA6D;
   }
 
-  #successful-button-clicked {
+  #successful-button:active {
     background-color: #04AA6D;
     color: white;
     border: 2px solid white;
@@ -79,7 +57,7 @@
     border: 2px solid #f0c502;
   }
 
-  #info-button-clicked {
+  #info-button:active {
     background-color: #f0c502;
     color: white;
     border: 2px solid white;
@@ -117,30 +95,10 @@
     border: 2px solid #b8154c;
   }
 
-  #warning-button-clicked {
+  #danger-button:active {
     background-color: #b8154c;
     color: white;
     border: 2px solid white;
     border-radius: 50px;
   }
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
