@@ -2,7 +2,6 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomePage from '../components/pages/Home.vue'
 import Button8thPage from '@/components/pages/Button8thPage.vue'
-import {RouteNames} from './routes'
 import SecondButtonPage from "@/components/pages/SecondButtonPage.vue";
 import ThirteenthButtonPage from "../components/ui/buttons/ThirteenthButton.vue";
 import FirstButtonPage from "@/components/pages/FirstButtonPage.vue";
