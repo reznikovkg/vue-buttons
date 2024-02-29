@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomePage from '../components/pages/Home.vue'
-import { RouteNames } from './routes'
+import {RouteNames} from './routes'
 import ButtonSixthPage from "@/components/pages/ButtonSixthPage.vue"
 import FourthButtonPage from "@/components/pages/FourthButtons.vue";
 import TwelfthButtonPage from '../components/pages/TwelfthButtonPage.vue'
-import ThirdButton from '../components/pages/ThirdButton.vue'
+import ThirdButtonPage from '../components/pages/ThirdButtonPage.vue'
 
 Vue.use(VueRouter)
 
@@ -31,9 +31,9 @@ const routes = [
     component: TwelfthButtonPage
   },
   {
-    path: '/third-button',
+    path: '/third_button',
     name: RouteNames.THIRD_BUTTON,
-    component: ThirdButton 
+    component: ThirdButtonPage
   }
 ]
 
