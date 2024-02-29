@@ -16,7 +16,6 @@ export default {
     type: {
       type: String,
     }
-    
   },
   computed: {
     btnClass () {
@@ -25,6 +24,7 @@ export default {
   }
 }
 </script>
+
 <style scoped lang="less"> 
 .btn {
   height: 50px;
@@ -38,7 +38,6 @@ export default {
   text-transform: uppercase;
   background-color: #fff;
   border: none;
-  
 
   &::before {
     position: absolute;
@@ -67,11 +66,14 @@ export default {
   }
 
   &--ok {
+
     &::before{
       content:"✔"
     }
   }
+
   &--canсel {
+
     &::before{
       content:"✖"
     }
