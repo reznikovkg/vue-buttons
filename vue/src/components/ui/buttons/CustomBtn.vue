@@ -41,7 +41,6 @@
   #successful-button:active {
     background-color: #04AA6D;
     color: white;
-    border: 2px solid white;
     border-radius: 50px;
   }
 
@@ -60,7 +59,6 @@
   #info-button:active {
     background-color: #f0c502;
     color: white;
-    border: 2px solid white;
     border-radius: 50px;
   }
 
@@ -76,10 +74,9 @@
     border: 2px solid #e17b01;
   }
 
-  #warning-button-clicked {
+  #warning-button:active {
     background-color: #e17b01;
     color: white;
-    border: 2px solid white;
     border-radius: 50px;
   }
 
@@ -98,7 +95,7 @@
   #danger-button:active {
     background-color: #b8154c;
     color: white;
-    border: 2px solid white;
     border-radius: 50px;
   }
 </style>
+
