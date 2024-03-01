@@ -1,9 +1,7 @@
 <template>
-  <div>
     <button class="btn5" :class="customStyle">
       LINK TO ACTION
     </button>
-  </div>
 </template>
 
 <script>
@@ -25,6 +23,7 @@ export default {
 
 <style lang="less">
 .btn5 {
+  display: block;
   color: white;
   font-size: 24px;
   margin: 30px 30px;

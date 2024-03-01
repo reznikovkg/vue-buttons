@@ -70,7 +70,6 @@ const routes = [
     path: '/fifth_button',
     name: RouteNames.FIFTH_BUTTON,
     component: FifthButtonPage
-
   }
 ]
 
