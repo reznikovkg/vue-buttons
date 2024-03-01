@@ -1,8 +1,8 @@
 <template>
   <button class="sample-button" :class="buttonClass" :style="buttonColor">
-     <slot>
-       WARNING
-     </slot>
+    <slot>
+      WARNING
+    </slot>
   </button>
 </template>
 
@@ -49,7 +49,7 @@ export default {
   cursor: pointer;
   border: none;
 
-  &--primary{
+  &--primary {
     background-color: var(--color);
   }
 
