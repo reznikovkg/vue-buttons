@@ -1,10 +1,5 @@
 <template>
   <div>
-    <CustomBtn>
-      <template slot="content">
-        SUCCESS
-      </template>
-    </CustomBtn>
     <RouterView />
     <ModalContainer />
   </div>
@@ -12,11 +7,9 @@
 
 <script>
 import ModalContainer from "@/components/parts/ModalContainer";
-import CustomBtn from "@/components/ui/buttons/CustomBtn.vue";
 
 export default {
   components: {
-    CustomBtn,
     ModalContainer
   }
 }
