@@ -23,7 +23,7 @@
           </ThirdButton>
         </div>
         <div class="button-grid__column">
-          <ThirdButton mode="ghost" color="#ea3d2f">
+          <ThirdButton mode="ghost">
             GHOST
           </ThirdButton>
           <ThirdButton mode="ghost" color="#37be5b">
@@ -34,7 +34,7 @@
           </ThirdButton>
         </div>
         <div class="button-grid__column">
-          <ThirdButton mode="raised" color="#ea3d2f">
+          <ThirdButton mode="raised">
             RAISED
           </ThirdButton>
           <ThirdButton mode="raised" color="#37be5b">
