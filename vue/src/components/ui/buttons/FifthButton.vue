@@ -1,7 +1,7 @@
 <template>
-    <button class="btn5" :class="customStyle">
-      LINK TO ACTION
-    </button>
+  <button class="btn5" :class="customStyle">
+    LINK TO ACTION
+  </button>
 </template>
 
 <script>
