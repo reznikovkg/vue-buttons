@@ -28,7 +28,7 @@ export default {
   display: flex;
   grid-gap: 40px;
 
-  &__coloumn{
+  &__coloumn {
     display: flex;
     flex-direction: column;
     grid-gap: 40px;
