@@ -68,7 +68,7 @@ const routes = [
   },
   {
     path: '/third_button',
-        name: RouteNames.THIRD_BUTTON,
+    name: RouteNames.THIRD_BUTTON,
     component: ThirdButtonPage
   }
 ]
