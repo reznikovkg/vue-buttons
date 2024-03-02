@@ -1,10 +1,6 @@
 <template>
   <div>
-    
-    <SeventhButton type="default">
-      DEFAULT
-    </SeventhButton>
-      
+    <SeventhButton/>
     <SeventhButton type="primary">
       PRIMARY
     </SeventhButton>
