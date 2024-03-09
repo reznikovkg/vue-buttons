@@ -3,17 +3,25 @@ import modals from './modals'
 export default {
     namespaced: true,
     state: {
-        buttonValues: {
+        buttonCounts: {
             button1: 0,
             button2: 0,
             button3: 0,
-            button4: 0
+            button4: 0,
         }
     },
     getters: {
-        getCount: (state) => state.buttonValues
+        getCounts: (state) => state.buttonCounts
     },
     mutations: {
+        incrementCount: (state, name) => {
+            ++state.buttonCounts[name]
+        }
+    },
+    actions: {
+        incrementCount: ({ commit }, name) => {
+            commit('incrementCount', name)
+        }
     },
     modules: {
         modals

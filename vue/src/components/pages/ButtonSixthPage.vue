@@ -1,29 +1,39 @@
 <template>
   <div>
-    <SixthButton/>
-    <SixthButton type="red">
-      HALLO <span @click="() => addCount(1)">{{$store.getters}}</span>
+    <SixthButton @click.native="increment('button1')">
+      HALLO <span>{{ getCounts.button1 }}</span>
     </SixthButton>
-    <SixthButton type="blue">
-      MARHABAN
+    <SixthButton type="red" @click.native="increment('button2')">
+      HALLO <span>{{ getCounts.button2 }}</span>
     </SixthButton>
-    <SixthButton type="purple">
-      NI HAO
+    <SixthButton type="blue" @click.native="increment('button3')">
+      MARHABAN <span>{{ getCounts.button3 }}</span>
+    </SixthButton>
+    <SixthButton type="purple" @click.native="increment('button4')">
+      NI HAO <span>{{ getCounts.button4 }}</span>
     </SixthButton>
   </div>
 </template>
 
 <script>
 import SixthButton from "@/components/ui/buttons/SixthButton.vue";
-import store from "@/store";
+import {mapActions, mapGetters} from "vuex";
 
 export default {
   components: {
     SixthButton
   },
+  computed: {
+    ...mapGetters('sixthButton', [
+      'getCounts',
+    ]),
+  },
   methods: {
-    addCount(param) {
-      store.state.buttonValues.button1 += param
+    ...mapActions('sixthButton', [
+      'incrementCount',
+    ]),
+    increment(index) {
+      this.incrementCount(index)
     }
   }
 }
