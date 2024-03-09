@@ -13,7 +13,7 @@ export default {
         buttons: []
     },
     getters: {
-        getButtonValues: (state) => state.
+        getButtonValues: (state) => state.buttonValues
     },
     mutations: {
         incrementButtonValue(state, buttonName) {
