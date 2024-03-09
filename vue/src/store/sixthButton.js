@@ -8,17 +8,12 @@ export default {
             button2: 0,
             button3: 0,
             button4: 0
-        },
-        key: 21,
-        buttons: []
+        }
     },
     getters: {
-        getButtonValues: (state) => state.buttonValues
+        getCount: (state) => state.buttonValues
     },
     mutations: {
-        incrementButtonValue(state, buttonName) {
-            state.buttonValues[buttonName]++;
-        }
     },
     modules: {
         modals
