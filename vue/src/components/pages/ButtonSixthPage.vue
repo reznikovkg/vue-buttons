@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import SixthButton from "@/components/ui/buttons/CustomButtonSixth";
+import SixthButton from "@/components/ui/buttons/SixthButton.vue";
 
 export default {
   components: {

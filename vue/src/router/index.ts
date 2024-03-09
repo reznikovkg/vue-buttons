@@ -54,7 +54,7 @@ const routes = [
     component: FourthButtonPage
   },
   {
-    path: '/button_sixth',
+    path: '/sixth_button',
     name: RouteNames.BUTTON_SIXTH,
     component: ButtonSixthPage
   },
