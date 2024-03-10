@@ -1,4 +1,5 @@
 import modals from './modals'
+import fourthButton from './fourthButton';
 
 export default {
   namespaced: true,
@@ -6,6 +7,7 @@ export default {
   getters: {},
   mutations: {},
   modules: {
-    modals
+    modals,
+    fourthButton
   }
 }
