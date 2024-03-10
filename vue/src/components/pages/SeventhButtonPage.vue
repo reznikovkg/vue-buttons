@@ -1,7 +1,9 @@
 <template>
   <div>
-    <SeventhButton @click.native="increment('button1')"/>
-    <span>({{ getCounts.button1 }})</span>
+
+    <SeventhButton type="default" @click.native="increment('button1')">
+      DEFAULT <span>({{ getCounts.button1 }})</span>
+    </SeventhButton>
 
     <SeventhButton type="primary" @click.native="increment('button2')">
       PRIMARY <span>({{ getCounts.button2 }})</span>
