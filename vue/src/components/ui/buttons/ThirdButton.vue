@@ -1,5 +1,10 @@
 <template>
-  <button class="sample-button" :class="buttonClass" :style="buttonColor" @click="() => incrementCount()">
+  <button 
+    class="sample-button" 
+    :class="buttonClass" 
+    :style="buttonColor" 
+    @click="() => incrementCount()"
+  >
     <slot>
       WARNING
     </slot>
