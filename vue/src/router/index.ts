@@ -3,7 +3,6 @@ import VueRouter from 'vue-router'
 import HomePage from '../components/pages/Home.vue'
 import Button8thPage from '@/components/pages/Button8thPage.vue'
 import SecondButtonPage from "@/components/pages/SecondButtonPage.vue";
-import ThirteenthButtonPage from "../components/ui/buttons/ThirteenthButton.vue";
 import FirstButtonPage from "@/components/pages/FirstButtonPage.vue";
 import TenthButtonPage from "@/components/pages/TenthButtonPage.vue"
 import ButtonSixthPage from "@/components/pages/ButtonSixthPage.vue"
@@ -14,6 +13,7 @@ import { RouteNames } from './routes'
 import ThirdButtonPage from '../components/pages/ThirdButtonPage.vue'
 import FifthButtonPage from "@/components/pages/FifthButtonPage.vue";
 import SeventhButtonPage from '@/components/pages/SeventhButtonPage.vue';
+import ThirteenButtons from "@/components/pages/ThirteenButtons.vue";
 
 Vue.use(VueRouter)
 
@@ -36,7 +36,7 @@ const routes = [
   {
     path: '/thirteenth_button',
     name: RouteNames.THIRTEENTH_BUTTON,
-    component: ThirteenthButtonPage
+    component: ThirteenButtons
   },
   {
     path: '/button_1',
