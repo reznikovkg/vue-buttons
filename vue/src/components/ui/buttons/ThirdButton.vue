@@ -1,12 +1,15 @@
 <template>
-  <button class="sample-button" :class="buttonClass" :style="buttonColor">
+  <button class="sample-button" :class="buttonClass" :style="buttonColor" @click="() => incrementCount()">
     <slot>
       WARNING
     </slot>
+    ({{ getButtonValues[index] }})
   </button>
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex';
+
 export default {
   name: 'ThirdButton',
   props: {
@@ -21,9 +24,16 @@ export default {
     smoothColor: {
       type: String,
       default: '#ea3d2f'
+    },
+    index: {
+      type: Number,
+      required: true
     }
   },
   computed: {
+    ...mapGetters('thirdButton', [
+      'getButtonValues'
+    ]),
     buttonClass () {
       return `sample-button--${this.mode}`
     },
@@ -33,13 +43,21 @@ export default {
         '--smooth-color': this.smoothColor
       }
     }
+  },
+  methods: {
+    ...mapActions('thirdButton', [
+      'incrementButtonValue'
+    ]),
+    incrementCount () {
+      this.incrementButtonValue(this.index)
+    }
   }
 }
 </script>
 
 <style scoped lang="less">
 .sample-button {
-  width: 110px;
+  width: 130px;
   height: 35px;
   border-radius: 4px;
   background-color: white;
