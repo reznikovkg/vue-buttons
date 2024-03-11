@@ -4,23 +4,23 @@ export default {
   namespaced: true,
   state: {
     buttonCounts: {
-      button1: 0,
-      button2: 0,
-      button3: 0,
-      button4: 0,
+      btn1: 0,
+      btn2: 0,
+      btn3: 0,
+      btn4: 0,
     }
   },
   getters: {
     getCounts: (state) => state.buttonCounts
   },
   mutations: {
-    incrementCount: (state, name) => {
+    incrCount: (state, name) => {
       state.buttonCounts[name] += 1
     }
   },
   actions: {
-    incrementCount: ({ commit }, name) => {
-      commit('incrementCount', name)
+    incrCount: ({ commit }, name) => {
+      commit('incrCount', name)
     }
   },
   modules: {
