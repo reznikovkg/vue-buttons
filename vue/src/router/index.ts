@@ -5,6 +5,7 @@ import {RouteNames} from './routes'
 import ButtonPage from "@/components/pages/ButtonPage.vue";
 
 Vue.use(VueRouter)
+
 const routes = [
   {
     path: '/',
