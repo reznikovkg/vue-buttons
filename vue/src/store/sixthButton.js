@@ -1,4 +1,3 @@
-import modals from './modals'
 
 export default {
   namespaced: true,
@@ -22,8 +21,5 @@ export default {
     incrCount: ({ commit }, name) => {
       commit('incrCount', name)
     }
-  },
-  modules: {
-    modals
   }
 }
