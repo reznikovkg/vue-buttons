@@ -15,7 +15,7 @@ export default {
   },
   mutations: {
     incrementButtonCount: (state, name) => {
-      ++state.counts[name];
+      state.counts[name] += 1;
     }
   },
   actions: {
