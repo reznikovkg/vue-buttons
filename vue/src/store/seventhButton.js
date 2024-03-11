@@ -17,7 +17,7 @@ export default {
   },
   mutations: {
     incrementCount: (state, name) => {
-      state.buttonCounts[name]++
+      state.buttonCounts[name] += 1
     }
   },
   actions: {
