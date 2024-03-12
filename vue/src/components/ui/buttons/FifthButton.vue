@@ -26,17 +26,17 @@ export default {
   },
   computed: {
     customStyle() {
-      return "btn5--" + this.type;
+      return "btn5--" + this.type
     },
     ...mapGetters('fifthButton', [
-      'getCount',
+      'getCount'
     ]),
   },
   methods: {
     ...mapActions('fifthButton', [
-      'upCount',
+      'upCount'
     ]),
-    increase() {
+    increase () {
       this.upCount(this.btnName)
     }
   }
