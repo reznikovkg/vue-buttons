@@ -2,15 +2,14 @@
   <button
     class="btn5"
     :class="customStyle"
-    @click="() => increase()"
+    @click="() => click()"
   >
     LINK TO ACTION
-    ({{ getCount[this.btnName] }})
+    <slot />
   </button>
 </template>
 
 <script>
-import {mapActions, mapGetters} from "vuex";
 
 export default {
   name: 'FifthButton',
@@ -18,26 +17,16 @@ export default {
     type: {
       type: String,
       required: true
-    },
-    btnName: {
-      type: String,
-      required: true
     }
   },
   computed: {
     customStyle() {
       return "btn5--" + this.type
-    },
-    ...mapGetters('fifthButton', [
-      'getCount'
-    ]),
+    }
   },
   methods: {
-    ...mapActions('fifthButton', [
-      'upCount'
-    ]),
-    increase () {
-      this.upCount(this.btnName)
+    click () {
+      this.$emit('click')
     }
   }
 }
