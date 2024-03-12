@@ -1,7 +1,7 @@
 <template>
   <button
-    class="btn5"
     :class="customStyle"
+    class="btn5"
     @click="() => click()"
   >
     LINK TO ACTION
