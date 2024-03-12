@@ -1,8 +1,9 @@
 <template>
   <button
     class="button"
-    :class="colorChanger">
+    :class="colorChanger"
     @click="() => click()"
+  >
     <slot>
       HELLO
     </slot>
