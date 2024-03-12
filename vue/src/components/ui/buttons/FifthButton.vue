@@ -1,21 +1,43 @@
 <template>
-  <button class="btn5" :class="customStyle">
+  <button
+    class="btn5"
+    :class="customStyle"
+    @click="() => increase()"
+  >
     LINK TO ACTION
+    ({{ getCount[this.btnName] }})
   </button>
 </template>
 
 <script>
+import {mapActions, mapGetters} from "vuex";
+
 export default {
   name: 'FifthButton',
   props: {
     type: {
       type: String,
       required: true
+    },
+    btnName: {
+      type: String,
+      required: true
     }
   },
   computed: {
-    customStyle () {
+    customStyle() {
       return "btn5--" + this.type;
+    },
+    ...mapGetters('fifthButton', [
+      'getCount',
+    ]),
+  },
+  methods: {
+    ...mapActions('fifthButton', [
+      'upCount',
+    ]),
+    increase() {
+      this.upCount(this.btnName)
     }
   }
 }
