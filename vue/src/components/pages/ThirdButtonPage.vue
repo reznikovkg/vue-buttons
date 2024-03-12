@@ -3,86 +3,85 @@
     <section class="p-16">
       <div class="button-grid">
         <div class="button-grid__column">
-          <ThirdButton :index="0" mode="primary"/>
-          <ThirdButton 
-            :index="1" 
+          <ThirdButton mode="primary" @click="() => incrementCount(0)">
+            WARNING ({{ getButtonValues[0] }})
+          </ThirdButton>
+          <ThirdButton  
             mode="primary" 
             color="#37be5b"
+            @click="() => incrementCount(1)"
           >
-            POSITIVE
+            POSITIVE ({{ getButtonValues[1] }})
           </ThirdButton>
           <ThirdButton 
-            :index="2" 
             mode="primary" 
             color="#f3aa18"
+            @click="() => incrementCount(2)"
           >
-            ATTENTION
+            ATTENTION ({{ getButtonValues[2] }})
           </ThirdButton>
         </div>
         <div class="button-grid__column">
           <ThirdButton 
-            :index="3" 
             mode="smooth" 
             color="#fde4e1"
+            @click="() => incrementCount(3)"
           >
-            SMOOTH
+            SMOOTH ({{ getButtonValues[3] }})
           </ThirdButton>
           <ThirdButton 
-            :index="4" 
             mode="smooth" 
             color="#dcf7e3" 
             smoothColor="#37be5b"
+            @click="() => incrementCount(4)"
           >
-            SMOOTH
+            SMOOTH ({{ getButtonValues[4] }})
           </ThirdButton>
-          <ThirdButton 
-            :index="5" 
+          <ThirdButton  
             mode="smooth" 
             color="#fdf3d7" 
             smoothColor="#f3aa18"
+            @click="() => incrementCount(5)"
           >
-            SMOOTH
+            SMOOTH ({{ getButtonValues[5] }})
           </ThirdButton>
         </div>
         <div class="button-grid__column">
-          <ThirdButton :index="6" mode="ghost">
-            GHOST
+          <ThirdButton mode="ghost" @click="() => incrementCount(6)">
+            GHOST ({{ getButtonValues[6] }})
           </ThirdButton>
           <ThirdButton 
-            :index="7" 
             mode="ghost"
             color="#37be5b"
+            @click="() => incrementCount(7)"
           >
-            GHOST
+            GHOST ({{ getButtonValues[7] }})
           </ThirdButton>
           <ThirdButton 
-            :index="8" 
             mode="ghost" 
             color="#f3aa18"
+            @click="() => incrementCount(8)"
           >
-            GHOST
+            GHOST ({{ getButtonValues[8] }})
           </ThirdButton>
         </div>
         <div class="button-grid__column">
-          <ThirdButton 
-            :index="9" 
-            mode="raised"
-          >
-            RAISED
+          <ThirdButton mode="raised" @click="() => incrementCount(9)">
+            RAISED ({{ getButtonValues[9] }})
           </ThirdButton>
           <ThirdButton 
-            :index="10" 
             mode="raised" 
             color="#37be5b"
+            @click="() => incrementCount(10)"
           >
-            RAISED
+            RAISED ({{ getButtonValues[10] }})
           </ThirdButton>
           <ThirdButton 
-            :index="11" 
             mode="raised" 
             color="#f3aa18"
+            @click="() => incrementCount(11)"
           >
-            RAISED
+            RAISED ({{ getButtonValues[11] }})
           </ThirdButton>
         </div>
       </div>
@@ -91,14 +90,28 @@
 </template>
 
 <script>
-import PageLayout from '../parts/PageLayout';
-import ThirdButton from "@/components/ui/buttons/ThirdButton.vue";
+import PageLayout from '../parts/PageLayout'
+import ThirdButton from "@/components/ui/buttons/ThirdButton.vue"
+import { mapGetters, mapActions } from 'vuex'
 
 export default {
   name: 'ThirdButtonPage',
   components: {
     PageLayout,
     ThirdButton
+  },
+  computed: {
+    ...mapGetters('thirdButton', [
+      'getButtonValues'
+    ])
+  },
+  methods: {
+    ...mapActions('thirdButton', [
+      'incrementButtonValue'
+    ]),
+    incrementCount (index) {
+      this.incrementButtonValue(index)
+    }
   }
 }
 </script>

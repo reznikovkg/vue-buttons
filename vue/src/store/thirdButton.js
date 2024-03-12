@@ -8,8 +8,8 @@ export default {
   },
   mutations: {
     incrementButtonValue: (state, buttonIndex) => {
-      state.buttonValues = [...state.buttonValues];
       state.buttonValues[buttonIndex] += 1;
+      state.buttonValues = [...state.buttonValues];
     }
   },
   actions: {
