@@ -1,15 +1,15 @@
 <template>
   <div>
-    <SixthButton @click.native="() => incr('btn1')">
+    <SixthButton @click="() => incr('btn1')">
       HALLO <span>({{ getCounts.btn1 }})</span>
     </SixthButton>
-    <SixthButton type="red" @click.native="() => incr('btn2')">
+    <SixthButton type="red" @click="() => incr('btn2')">
       HALLO <span>({{ getCounts.btn2 }})</span>
     </SixthButton>
-    <SixthButton type="blue" @click.native="() => incr('btn3')">
+    <SixthButton type="blue" @click="() => incr('btn3')">
       MARHABAN <span>({{ getCounts.btn3 }})</span>
     </SixthButton>
-    <SixthButton type="purple" @click.native="() => incr('btn4')">
+    <SixthButton type="purple" @click="() => incr('btn4')">
       NI HAO <span>({{ getCounts.btn4 }})</span>
     </SixthButton>
   </div>

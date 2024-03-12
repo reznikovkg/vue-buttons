@@ -1,5 +1,8 @@
 <template>
-  <button class="button" :class="colorChanger">
+  <button
+    class="button"
+    :class="colorChanger">
+    @click="() => click()"
     <slot>
       HELLO
     </slot>
@@ -18,6 +21,11 @@ export default {
   computed: {
     colorChanger () {
       return 'button--' + this.type;
+    }
+  },
+  methods: {
+    click () {
+      this.$emit('click')
     }
   }
 }
