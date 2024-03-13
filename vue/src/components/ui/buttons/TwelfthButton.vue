@@ -1,5 +1,9 @@
 <template>
-  <button class="twelfth-btn" :class="className">
+  <button 
+  class="twelfth-btn" 
+  :class="className" 
+  @click="() => click()"
+  >
     <slot>
       button
     </slot>
@@ -15,6 +19,11 @@ export default {
   computed: {
     className () {
       return `twelfth-btn--${this.type}`;
+    }
+  },
+  methods: {
+    click () {
+      this.$emit('click');
     }
   }
 }

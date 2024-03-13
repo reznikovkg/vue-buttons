@@ -1,21 +1,21 @@
 <template>
   <div class="wrapper">
-    <TwelfthButton @click.native="increment(0)" type="purple">
+    <TwelfthButton @click="() => increment(0)" type="purple">
       button <span>({{ getButtonCount(0) }})</span>
     </TwelfthButton>
-    <TwelfthButton @click.native="increment(1)" type="green">
+    <TwelfthButton @click="() => increment(1)" type="green">
       button <span>({{ getButtonCount(1) }})</span>
     </TwelfthButton>
-    <TwelfthButton @click.native="increment(2)" type="orange">
+    <TwelfthButton @click="() => increment(2)" type="orange">
       button <span>({{ getButtonCount(2) }})</span>
     </TwelfthButton>
-    <TwelfthButton @click.native="increment(3)" type="blue">
+    <TwelfthButton @click="() => increment(3)" type="blue">
       button <span>({{ getButtonCount(3) }})</span>
     </TwelfthButton>
-    <TwelfthButton @click.native="increment(4)" type="brown">
+    <TwelfthButton @click="() => increment(4)" type="brown">
       button <span>({{ getButtonCount(4) }})</span>
     </TwelfthButton>
-    <TwelfthButton @click.native="increment(5)" type="lime">
+    <TwelfthButton @click="() => increment(5)" type="lime">
       button <span>({{ getButtonCount(5) }})</span>
     </TwelfthButton>
   </div>
