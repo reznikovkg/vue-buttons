@@ -1,5 +1,7 @@
 import modals from './modals'
-import fourthButton from './fourthButton';
+import thirdButton from './thirdButton'
+import fourthButton from './fourthButton'
+import sixthButton from './sixthButton'
 import tenthButton from './tenthButton'
 
 export default {
