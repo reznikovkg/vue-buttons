@@ -1,6 +1,5 @@
 import modals from './modals'
-import sixthButton from "@/store/sixthButton";
-import tenthButton from "@/store/tenthButton";
+import tenthButton from './tenthButton'
 
 export default {
   namespaced: true,
@@ -9,6 +8,7 @@ export default {
   mutations: {},
   modules: {
     modals,
+    fourthButton,
     sixthButton,
     tenthButton
   }
