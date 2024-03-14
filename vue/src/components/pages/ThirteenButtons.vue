@@ -1,28 +1,28 @@
 <template>
   <div class="wrapper">
-    <ThirteenthButton :count="blackButtonCount" @click="incrementBlackButtonCount" />
-    <ThirteenthButton color="blue" :count="blueButtonCount" @click="incrementBlueButtonCount" />
-    <ThirteenthButton color="green" :count="greenButtonCount" @click="incrementGreenButtonCount" />
-    <ThirteenthButton color="red" :count="redButtonCount" @click="incrementRedButtonCount" />
+    <ThirteenthButton :count="getBlackButtonCount" @click="incrementBlackButtonCount" />
+    <ThirteenthButton color="blue" :count="getBlueButtonCount" @click="incrementBlueButtonCount" />
+    <ThirteenthButton color="green" :count="getGreenButtonCount" @click="incrementGreenButtonCount" />
+    <ThirteenthButton color="red" :count="getRedButtonCount" @click="incrementRedButtonCount" />
   </div>
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex';
+import { mapGetters, mapActions } from 'vuex';
 import ThirteenthButton from '../ui/buttons/ThirteenthButton.vue';
 
 export default {
   name: 'ThirteenButtons',
-  components:{
-    ThirteenthButton
+  components: {
+    ThirteenthButton,
   },
   computed: {
-    ...mapState('ThirteenthButtonStore', {
-      blackButtonCount: state => state.blackButtonCount,
-      blueButtonCount: state => state.blueButtonCount,
-      greenButtonCount: state => state.greenButtonCount,
-      redButtonCount: state => state.redButtonCount
-    })
+    ...mapGetters('ThirteenthButtonStore',[
+      'getBlackButtonCount',
+      'getBlueButtonCount',
+      'getGreenButtonCount',
+      'getRedButtonCount'
+    ])
   },
   methods: {
     ...mapActions('ThirteenthButtonStore', [
