@@ -1,8 +1,8 @@
 <template>
   <button
-      class="button"
-      :style="buttonStyles"
-      @click="() => this.click()"
+    class="button"
+    :style="buttonStyles"
+    @click="() => click()"
   >
     <slot>
       Button
