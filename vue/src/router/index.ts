@@ -6,7 +6,7 @@ import SecondButtonPage from "@/components/pages/SecondButtonPage.vue";
 import ThirteenthButtonPage from "../components/ui/buttons/ThirteenthButton.vue";
 import FirstButtonPage from "@/components/pages/FirstButtonPage.vue";
 import TenthButtonPage from "@/components/pages/TenthButtonPage.vue"
-import ButtonSixthPage from "@/components/pages/ButtonSixthPage.vue"
+import ButtonSixthPage from "@/components/pages/SixthButtonPage.vue"
 import FourthButtonPage from "@/components/pages/FourthButtonPage.vue";
 import TwelfthButtonPage from '../components/pages/TwelfthButtonPage.vue'
 import FourteenthButtonPage from '../components/pages/FourteenthButtonPage.vue'
@@ -54,8 +54,8 @@ const routes = [
     component: FourthButtonPage
   },
   {
-    path: '/button_sixth',
-    name: RouteNames.BUTTON_SIXTH,
+    path: '/sixth_button',
+    name: RouteNames.SIXTH_BUTTON,
     component: ButtonSixthPage
   },
   {
