@@ -1,4 +1,5 @@
 import modals from './modals'
+import tenthButton from './tenthButton'
 import thirdButton from './thirdButton'
 
 export default {
@@ -8,6 +9,7 @@ export default {
   mutations: {},
   modules: {
     modals,
+    tenthButton,
     thirdButton
   }
 }
