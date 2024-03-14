@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: 'CustomButtonSixth',
+  name: 'SixthButton',
   props: {
     type: {
       type: String,
