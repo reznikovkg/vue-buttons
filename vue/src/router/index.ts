@@ -6,10 +6,14 @@ import SecondButtonPage from "@/components/pages/SecondButtonPage.vue";
 import ThirteenthButtonPage from "../components/ui/buttons/ThirteenthButton.vue";
 import FirstButtonPage from "@/components/pages/FirstButtonPage.vue";
 import TenthButtonPage from "@/components/pages/TenthButtonPage.vue"
-import ButtonSixthPage from "@/components/pages/ButtonSixthPage.vue"
-import FourthButtonPage from "@/components/pages/FourthButtons.vue";
+import ButtonSixthPage from "@/components/pages/SixthButtonPage.vue"
+import FourthButtonPage from "@/components/pages/FourthButtonPage.vue";
 import TwelfthButtonPage from '../components/pages/TwelfthButtonPage.vue'
+import FourteenthButtonPage from '../components/pages/FourteenthButtonPage.vue'
 import { RouteNames } from './routes'
+import ThirdButtonPage from '../components/pages/ThirdButtonPage.vue'
+import FifthButtonPage from "@/components/pages/FifthButtonPage.vue";
+import SeventhButtonPage from '@/components/pages/SeventhButtonPage.vue';
 
 Vue.use(VueRouter)
 
@@ -50,14 +54,34 @@ const routes = [
     component: FourthButtonPage
   },
   {
-    path: '/button_sixth',
-    name: RouteNames.BUTTON_SIXTH,
+    path: '/sixth_button',
+    name: RouteNames.SIXTH_BUTTON,
     component: ButtonSixthPage
   },
   {
     path: '/twelfth_button',
     name: RouteNames.TWELFTH_BUTTON,
     component: TwelfthButtonPage
+  },
+  {
+    path: '/fourteenth_button',
+    name: RouteNames.FOURTEENTH_BUTTON,
+    component: FourteenthButtonPage
+  },
+  {
+    path: '/third_button',
+    name: RouteNames.THIRD_BUTTON,
+    component: ThirdButtonPage
+  },
+  {
+    path: '/fifth_button',
+    name: RouteNames.FIFTH_BUTTON,
+    component: FifthButtonPage
+  },
+  {
+    path: '/seventh_button',
+    name: RouteNames.SEVENTH_BUTTON,
+    component: SeventhButtonPage
   }
 ]
 
