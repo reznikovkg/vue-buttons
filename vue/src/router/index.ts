@@ -7,7 +7,7 @@ import ThirteenthButtonPage from "../components/ui/buttons/ThirteenthButton.vue"
 import FirstButtonPage from "@/components/pages/FirstButtonPage.vue";
 import TenthButtonPage from "@/components/pages/TenthButtonPage.vue"
 import ButtonSixthPage from "@/components/pages/ButtonSixthPage.vue"
-import FourthButtonPage from "@/components/pages/FourthButtons.vue";
+import FourthButtonPage from "@/components/pages/FourthButtonPage.vue";
 import TwelfthButtonPage from '../components/pages/TwelfthButtonPage.vue'
 import FourteenthButtonPage from '../components/pages/FourteenthButtonPage.vue'
 import { RouteNames } from './routes'
