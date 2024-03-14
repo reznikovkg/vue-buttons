@@ -1,12 +1,13 @@
 import modals from './modals'
-import sixthButton from './sixthButton';
 
 export default {
-  namespaced: true, state: {},
+  namespaced: true,
+  state: {},
   getters: {},
   mutations: {},
   modules: {
     modals,
-    sixthButton
+    sixthButton,
+    tenthButton
   }
 }
