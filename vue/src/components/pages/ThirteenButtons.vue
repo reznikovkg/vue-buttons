@@ -1,9 +1,9 @@
 <template>
   <div class="wrapper">
-    <ThirteenthButton color="black" :count="getButtonCount(0)" @click="incrementButton(0)" />
-    <ThirteenthButton color="blue" :count="getButtonCount(1)" @click="incrementButton(1)" />
-    <ThirteenthButton color="green" :count="getButtonCount(2)" @click="incrementButton(2)" />
-    <ThirteenthButton color="red" :count="getButtonCount(3)" @click="incrementButton(3)" />
+    <ThirteenthButton color="black" :count="getButtonCount(0)" @click="() => incrementButton(0)" />
+    <ThirteenthButton color="blue" :count="getButtonCount(1)" @click="() => incrementButton(1)" />
+    <ThirteenthButton color="green" :count="getButtonCount(2)" @click="() => incrementButton(2)" />
+    <ThirteenthButton color="red" :count="getButtonCount(3)" @click="() => incrementButton(3)" />
   </div>
 </template>
 
@@ -26,8 +26,8 @@ export default {
     ])
   }
 };
-
 </script>
+
 <style scoped lang="less">
 .wrapper {
   max-width: 60%;
