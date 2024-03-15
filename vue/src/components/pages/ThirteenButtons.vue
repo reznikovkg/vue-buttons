@@ -1,40 +1,33 @@
 <template>
   <div class="wrapper">
-    <ThirteenthButton :count="getBlackButtonCount" @click="incrementBlackButtonCount" />
-    <ThirteenthButton color="blue" :count="getBlueButtonCount" @click="incrementBlueButtonCount" />
-    <ThirteenthButton color="green" :count="getGreenButtonCount" @click="incrementGreenButtonCount" />
-    <ThirteenthButton color="red" :count="getRedButtonCount" @click="incrementRedButtonCount" />
+    <ThirteenthButton color="black" :count="getButtonCount(0)" @click="incrementButton(0)" />
+    <ThirteenthButton color="blue" :count="getButtonCount(1)" @click="incrementButton(1)" />
+    <ThirteenthButton color="green" :count="getButtonCount(2)" @click="incrementButton(2)" />
+    <ThirteenthButton color="red" :count="getButtonCount(3)" @click="incrementButton(3)" />
   </div>
 </template>
 
 <script>
 import { mapGetters, mapActions } from 'vuex';
-import ThirteenthButton from '../ui/buttons/ThirteenthButton.vue';
+import ThirteenthButton from '@/components/ui/buttons/ThirteenthButton';
 
 export default {
-  name: 'ThirteenButtons',
   components: {
-    ThirteenthButton,
+    ThirteenthButton
   },
   computed: {
-    ...mapGetters('ThirteenthButtonStore',[
-      'getBlackButtonCount',
-      'getBlueButtonCount',
-      'getGreenButtonCount',
-      'getRedButtonCount'
+    ...mapGetters('ThirteenthButtonStore', [
+      'getButtonCount'
     ])
   },
   methods: {
     ...mapActions('ThirteenthButtonStore', [
-      'incrementBlackButtonCount',
-      'incrementBlueButtonCount',
-      'incrementGreenButtonCount',
-      'incrementRedButtonCount'
+      'incrementButton'
     ])
   }
 };
-</script>
 
+</script>
 <style scoped lang="less">
 .wrapper {
   max-width: 60%;
