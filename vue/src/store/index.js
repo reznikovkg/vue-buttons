@@ -1,4 +1,9 @@
 import modals from './modals'
+import twelfthButton from './twelfthButton'
+import fourthButton from './fourthButton';
+import thirdButton from './thirdButton'
+import sixthButton from './sixthButton'
+import tenthButton from './tenthButton'
 import fifthButton from './fifthButton';
 
 export default {
@@ -6,9 +11,13 @@ export default {
   state: {},
   getters: {},
   mutations: {},
-  action: {},
   modules: {
     modals,
+    twelfthButton,
+    thirdButton,
+    fourthButton,
+    sixthButton,
+    tenthButton,
     fifthButton
   }
 }
