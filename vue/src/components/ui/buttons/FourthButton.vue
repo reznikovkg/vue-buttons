@@ -1,5 +1,9 @@
 <template>
-  <button class="button" :style="buttonStyles">
+  <button
+    class="button"
+    :style="buttonStyles"
+    @click="() => click()"
+  >
     <slot>
       Button
     </slot>
@@ -30,6 +34,11 @@ export default {
         '--bg-end': this.bgEnd,
         '--box-shadow-color': this.boxShadowColor
       }
+    }
+  },
+  methods: {
+    click () {
+      this.$emit('click')
     }
   }
 }

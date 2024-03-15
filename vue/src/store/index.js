@@ -1,5 +1,10 @@
 import modals from './modals'
 import ThirteenthButtonStore from "./ThirteenthButtonStore";
+import twelfthButton from './twelfthButton'
+import fourthButton from './fourthButton';
+import thirdButton from './thirdButton'
+import sixthButton from './sixthButton'
+import tenthButton from './tenthButton'
 
 export default {
   namespaced: true,
@@ -8,6 +13,11 @@ export default {
   mutations: {},
   modules: {
     modals,
-    ThirteenthButtonStore
+    ThirteenthButtonStore,
+    twelfthButton,
+    thirdButton,
+    fourthButton,
+    sixthButton,
+    tenthButton
   }
 }

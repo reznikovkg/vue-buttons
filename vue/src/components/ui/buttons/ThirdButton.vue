@@ -1,5 +1,10 @@
 <template>
-  <button class="sample-button" :class="buttonClass" :style="buttonColor">
+  <button 
+    class="sample-button" 
+    :class="buttonClass" 
+    :style="buttonColor" 
+    @click="() => click()"
+  >
     <slot>
       WARNING
     </slot>
@@ -33,13 +38,18 @@ export default {
         '--smooth-color': this.smoothColor
       }
     }
+  },
+  methods: {
+    click () {
+      this.$emit('click')
+    }
   }
 }
 </script>
 
 <style scoped lang="less">
 .sample-button {
-  width: 110px;
+  width: 130px;
   height: 35px;
   border-radius: 4px;
   background-color: white;
