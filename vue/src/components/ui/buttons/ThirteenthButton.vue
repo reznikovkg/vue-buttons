@@ -1,8 +1,6 @@
 <template>
-  <button class="thirteenth-btn" :class="className">
-    <slot>
-      Button
-    </slot>
+  <button class="thirteenth-btn" :class="className" @click="increment">
+    {{ buttonText }}
   </button>
 </template>
 
@@ -13,11 +11,23 @@ export default {
     color: {
       type: String,
       default: 'black'
+    },
+    count: {
+      type: Number,
+      default: 0
     }
   },
   computed: {
-    className () {
+    className() {
       return `thirteenth-btn--${this.color}`;
+    },
+    buttonText() {
+      return `Кнопка (${this.count})`;
+    }
+  },
+  methods: {
+    increment() {
+      this.$emit('click');
     }
   }
 }

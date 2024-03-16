@@ -1,6 +1,11 @@
 <template>
-  <button class="btn5" :class="customStyle">
+  <button
+    class="btn5"
+    :class="customStyle"
+    @click="() => click()"
+  >
     LINK TO ACTION
+    <slot />
   </button>
 </template>
 
@@ -14,8 +19,13 @@ export default {
     }
   },
   computed: {
-    customStyle () {
-      return "btn5--" + this.type;
+    customStyle() {
+      return "btn5--" + this.type
+    }
+  },
+  methods: {
+    click () {
+      this.$emit('click')
     }
   }
 }
