@@ -1,5 +1,8 @@
 <template>
-  <button class="btn" :class="btnClass">
+  <button class="btn" 
+  :class="btnClass"
+  @click="() => click()"
+  >
     <slot>
       Ok
     </slot>
@@ -20,6 +23,11 @@ export default {
   computed: {
     btnClass () {
       return ['btn--' + this.color, 'btn--' + this.type];
+    }
+  },
+  methods: {
+    click () {
+      this.$emit('click');
     }
   }
 }
@@ -45,7 +53,7 @@ export default {
     font-weight: 700;
     top: 50%;
     transform: translateY(-60%);
-    right: 15%;
+    right: 10%;
     color: transparent;
     z-index: 2;
     background-clip: text;
@@ -55,7 +63,7 @@ export default {
   &::after {
     content: " ";
     height: 60px;
-    width: 160px;
+    width: 190px;
     position: absolute;
     border-radius: 50px;
     z-index: -1;
