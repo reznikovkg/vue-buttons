@@ -1,9 +1,9 @@
 <template>
-    <button class="btn" :class="btnClass" @click="() => click()">
-      <slot>
-        MENU ≡
-      </slot>
-    </button>
+  <button class="btn" :class="btnClass" @click="() => click()">
+    <slot>
+      MENU ≡
+    </slot>
+  </button>
 </template>
 
 <script>

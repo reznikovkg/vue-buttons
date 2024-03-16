@@ -2,18 +2,18 @@
   <PageLayout>
     <div>
       <SecondButton type="orange" @click="() => increment('btn1')">
-        MENU ≡ <span>({{ getCounts.btn1 }})</span>
+        MENU ({{ getCounts.btn1 }}) ≡
       </SecondButton>
       <SecondButton type="light" @click="() => increment('btn2')">
-        MENU ≡ <span>({{ getCounts.btn2 }})</span>
+        MENU ({{ getCounts.btn2 }}) ≡
       </SecondButton>
     </div>
     <div>
       <SecondButton @click="() => increment('btn3')">
-        MENU ≡ <span>({{ getCounts.btn3 }})</span>
+        MENU ({{ getCounts.btn3 }}) ≡
       </SecondButton>
       <SecondButton type="purple" @click="() => increment('btn4')">
-        MENU ≡ <span>({{ getCounts.btn4 }})</span>
+        MENU ({{ getCounts.btn4 }}) ≡
       </SecondButton>
     </div>
   </PageLayout>
@@ -33,7 +33,7 @@ export default {
   computed: {
     ...mapGetters('secondButton', [
       'getCounts',
-    ]),
+    ])
   },
   methods: {
     ...mapActions('secondButton', [
