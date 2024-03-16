@@ -14,6 +14,7 @@ import ThirdButtonPage from '../components/pages/ThirdButtonPage.vue'
 import FifthButtonPage from "@/components/pages/FifthButtonPage.vue";
 import SeventhButtonPage from '@/components/pages/SeventhButtonPage.vue';
 import ThirteenButtons from "@/components/pages/ThirteenButtons.vue";
+import EleventhPage from "@/components/pages/EleventhPage.vue";
 
 Vue.use(VueRouter)
 
@@ -47,6 +48,11 @@ const routes = [
     path: '/tenth_button',
     name: RouteNames.TENTH_BUTTON,
     component: TenthButtonPage
+  },
+  {
+    path: '/eleventh-button',
+    name: RouteNames.ELEVENTH_BUTTON,
+    component: EleventhPage
   },
   {
     path: '/fourth_button',
