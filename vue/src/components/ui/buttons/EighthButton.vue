@@ -2,8 +2,10 @@
   <button 
     class = "eighth-button"
     :class = "{ 'primary': type === 'primary', 'filled': fill }"
+    @click="() => click()"
   >
-    <slot>button</slot>
+    button
+    <slot/>
   </button>
 </template>
 
@@ -18,6 +20,11 @@ export default {
     fill: {
       type: Boolean,
       default: false
+    }
+  },
+  methods: {
+    click () {
+      this.$emit('click')
     }
   }
 }

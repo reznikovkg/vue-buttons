@@ -7,6 +7,7 @@ import thirdButton from './thirdButton'
 import sixthButton from './sixthButton'
 import tenthButton from './tenthButton'
 import fifthButton from './fifthButton';
+import eighthButton from './eighthButton'
 
 export default {
   namespaced: true,
@@ -22,6 +23,7 @@ export default {
     fourthButton,
     sixthButton,
     tenthButton,
-    fifthButton
+    fifthButton,
+    eighthButton
   }
 }
