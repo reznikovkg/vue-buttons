@@ -1,7 +1,7 @@
 <template>
   <button class="btn" 
-  :class="btnClass"
-  @click="() => click()"
+    :class="btnClass"
+    @click="() => click()"
   >
     <slot>
       Ok
