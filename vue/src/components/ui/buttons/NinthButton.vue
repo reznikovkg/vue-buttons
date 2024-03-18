@@ -1,8 +1,8 @@
 <template>
   <button
     class="ninth-btn"
-    @click="() => click()"
     :disabled="this.disabled"
+    @click="() => click()"
   >
     <slot>
       Button
@@ -24,7 +24,7 @@ export default {
     }
   },
   methods: {
-  click () {
+    click () {
     this.$emit('click')
     }
   }
