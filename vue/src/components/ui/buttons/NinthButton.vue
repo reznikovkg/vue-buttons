@@ -1,6 +1,7 @@
 <template>
   <button
-    class="button"
+    class="ninth-btn"
+    @click="() => click()"
     :disabled="this.disabled"
   >
     <slot>
@@ -20,13 +21,18 @@ export default {
     active: {
       type: Boolean,
       default: false
-    },
+    }
+  },
+  methods: {
+  click () {
+    this.$emit('click')
+    }
   }
 }
 </script>
 
 <style scoped lang="less">
-.button {
+.ninth-btn {
   background-color: #ebeef2;
   color: #7187BD;
   border: 1px solid #ebeef2;

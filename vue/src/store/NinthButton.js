@@ -1,23 +1,20 @@
 export default {
-    namespaced: true,
-    state: {
-        counts: {
-            b1: 0,
-            b2: 0,
-            b3: 0,
-        }
-    },
-    getters: {
-        getButtonCounts: (state) => state.counts
-    },
-    mutations: {
-        incrementButtonCount: (state, name) => {
-            state.counts[name] += 1;
-        }
-    },
-    actions: {
-        incrementButtonCount: ({ commit }, name) => {
-            commit('incrementButtonCount', name)
-        }
+  namespaced: true,
+  state: {
+    buttonCounts: Array(5).fill(0)
+  },
+  getters: {
+    getButtonCounts: (state) => state.buttonCounts
+  },
+  mutations: {
+    incrementButtonCount: (state, index) => {
+      state.buttonCounts[index] += 1;
+      state.buttonCounts = [...state.buttonCounts];
     }
+  },
+  actions: {
+    incrementButtonCount: ({ commit }, index) => {
+      commit('incrementButtonCount', index)
+    }
+  }
 }
