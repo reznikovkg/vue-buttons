@@ -1,5 +1,5 @@
 import modals from './modals'
-import NinthButton from "@/store/NinthButton";
+import NinthButton from './NinthButton'
 
 export default {
   namespaced: true,
