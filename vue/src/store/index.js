@@ -1,4 +1,5 @@
 import modals from './modals'
+import firstButton from './firstButton'
 
 export default {
   namespaced: true,
@@ -6,6 +7,7 @@ export default {
   getters: {},
   mutations: {},
   modules: {
-    modals
+    modals,
+    firstButton
   }
 }

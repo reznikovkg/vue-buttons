@@ -1,5 +1,7 @@
 <template>
-  <button class="first-button" :class=getColor>
+  <button class="first-button" :class=getColor
+    @click="() => click()"
+    >
     <slot/>
   </button>
 </template>
@@ -16,6 +18,11 @@ export default {
   computed: {
     getColor () {
       return `first-button--${this.color}`;
+    }
+  },
+  methods: {
+    click () {
+      this.$emit('click')
     }
   }
 }
