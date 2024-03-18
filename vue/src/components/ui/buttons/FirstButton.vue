@@ -1,7 +1,9 @@
 <template>
-  <button class="first-button" :class=getColor
+  <button
+    class="first-button"
+    :class=getColor
     @click="() => click()"
-    >
+  >
     <slot/>
   </button>
 </template>
