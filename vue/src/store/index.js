@@ -9,6 +9,7 @@ import tenthButton from './tenthButton'
 import fifthButton from './fifthButton';
 import fourteenthButton from './fourteenthButton';
 import eighthButton from './eighthButton'
+import NinthButton from "./NinthButton";
 import seventhButton from './seventhButton'
 
 export default {
@@ -18,6 +19,7 @@ export default {
   mutations: {},
   modules: {
     modals,
+    NinthButton,
     ThirteenthButtonStore,
     twelfthButton,
     secondButton,
