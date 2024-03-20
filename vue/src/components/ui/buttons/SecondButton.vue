@@ -1,9 +1,9 @@
 <template>
-    <button class="btn" :class="btnClass">
-      <slot>
-        MENU ≡
-      </slot>
-    </button>
+  <button class="btn" :class="btnClass" @click="() => click()">
+    <slot>
+      MENU ≡
+    </slot>
+  </button>
 </template>
 
 <script>
@@ -18,6 +18,11 @@ export default {
   computed: {
     btnClass () {
       return 'btn--' + this.type;
+    }
+  },
+  methods: {
+    click () {
+      this.$emit('click')
     }
   }
 }

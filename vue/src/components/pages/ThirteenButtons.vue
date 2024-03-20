@@ -1,21 +1,31 @@
 <template>
   <div class="wrapper">
-    <ThirteenthButton />
-    <ThirteenthButton color="blue"/>
-    <ThirteenthButton color="green"/>
-    <ThirteenthButton color="red"/>
+    <ThirteenthButton color="black" :count="getButtonCount(0)" @click="() => incrementButton(0)" />
+    <ThirteenthButton color="blue" :count="getButtonCount(1)" @click="() => incrementButton(1)" />
+    <ThirteenthButton color="green" :count="getButtonCount(2)" @click="() => incrementButton(2)" />
+    <ThirteenthButton color="red" :count="getButtonCount(3)" @click="() => incrementButton(3)" />
   </div>
 </template>
 
 <script>
-import ThirteenthButton from "@/components/ui/buttons/ThirteenthButton";
+import { mapGetters, mapActions } from 'vuex';
+import ThirteenthButton from '@/components/ui/buttons/ThirteenthButton';
 
 export default {
-  name: 'ThirteenthButtonPage',
   components: {
     ThirteenthButton
+  },
+  computed: {
+    ...mapGetters('ThirteenthButtonStore', [
+      'getButtonCount'
+    ])
+  },
+  methods: {
+    ...mapActions('ThirteenthButtonStore', [
+      'incrementButton'
+    ])
   }
-}
+};
 </script>
 
 <style scoped lang="less">
