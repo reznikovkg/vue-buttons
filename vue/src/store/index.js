@@ -8,7 +8,10 @@ import thirdButton from './thirdButton'
 import sixthButton from './sixthButton'
 import tenthButton from './tenthButton'
 import fifthButton from './fifthButton';
+import fourteenthButton from './fourteenthButton';
 import eighthButton from './eighthButton'
+import NinthButton from "./NinthButton";
+import seventhButton from './seventhButton'
 
 export default {
   namespaced: true,
@@ -18,6 +21,7 @@ export default {
   modules: {
     modals,
     firstButton,
+    NinthButton,
     ThirteenthButtonStore,
     twelfthButton,
     secondButton,
@@ -26,6 +30,8 @@ export default {
     sixthButton,
     tenthButton,
     fifthButton,
-    eighthButton
+    fourteenthButton,
+    eighthButton,
+    seventhButton
   }
 }
