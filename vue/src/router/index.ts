@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomePage from '../components/pages/Home.vue'
 import Button8thPage from '@/components/pages/Button8thPage.vue'
+import NinthButtonPage from "@/components/pages/NinthButtonPage.vue";
 import SecondButtonPage from "@/components/pages/SecondButtonPage.vue";
 import FirstButtonPage from "@/components/pages/FirstButtonPage.vue";
 import TenthButtonPage from "@/components/pages/TenthButtonPage.vue"
@@ -33,6 +34,11 @@ const routes = [
     path: '/button_8',
     name: RouteNames.BUTTON_8,
     component: Button8thPage
+  },
+  {
+    path: '/ninth_button',
+    name: RouteNames.NINTH_BUTTON,
+    component: NinthButtonPage
   },
   {
     path: '/thirteenth_button',
