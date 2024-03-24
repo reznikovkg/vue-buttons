@@ -5,13 +5,13 @@
         SUCCESSFUL (<span>{{ getButtonCounts[0] }}}</span>)
       </EleventhButton>
       <EleventhButton type="info" @click="() => increment(1)">
-        INFO (<span>{{ getButtonCounts[0] }}}</span>)
+        INFO (<span>{{ getButtonCounts[1] }}}</span>)
       </EleventhButton>
       <EleventhButton type="warning" @click="() => increment(2)">
-        WARNING (<span>{{ getButtonCounts[0] }}}</span>)
+        WARNING (<span>{{ getButtonCounts[2] }}}</span>)
       </EleventhButton>
       <EleventhButton type="danger" @click="() => increment(3)">
-        DANGER (<span>{{ getButtonCounts[0] }}}</span>)
+        DANGER (<span>{{ getButtonCounts[3] }}}</span>)
       </EleventhButton>
     </div>
   </PageLayout>
