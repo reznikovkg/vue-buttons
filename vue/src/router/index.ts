@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomePage from '../components/pages/Home.vue'
+import {RouteNames} from './routes'
 import Button8thPage from '@/components/pages/Button8thPage.vue'
 import NinthButtonPage from "@/components/pages/NinthButtonPage.vue";
 import SecondButtonPage from "@/components/pages/SecondButtonPage.vue";
@@ -10,7 +11,6 @@ import ButtonSixthPage from "@/components/pages/SixthButtonPage.vue"
 import FourthButtonPage from "@/components/pages/FourthButtonPage.vue";
 import TwelfthButtonPage from '../components/pages/TwelfthButtonPage.vue'
 import FourteenthButtonPage from '../components/pages/FourteenthButtonPage.vue'
-import { RouteNames } from './routes'
 import ThirdButtonPage from '../components/pages/ThirdButtonPage.vue'
 import FifthButtonPage from "@/components/pages/FifthButtonPage.vue";
 import SeventhButtonPage from '@/components/pages/SeventhButtonPage.vue';
