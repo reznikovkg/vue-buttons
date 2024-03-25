@@ -8,6 +8,7 @@ import thirdButton from './thirdButton'
 import sixthButton from './sixthButton'
 import tenthButton from './tenthButton'
 import fifthButton from './fifthButton';
+import eleventhButton from "./EleventhButton";
 import fourteenthButton from './fourteenthButton';
 import eighthButton from './eighthButton'
 import NinthButton from "./NinthButton";
@@ -30,6 +31,7 @@ export default {
     sixthButton,
     tenthButton,
     fifthButton,
+    eleventhButton,
     fourteenthButton,
     eighthButton,
     seventhButton
